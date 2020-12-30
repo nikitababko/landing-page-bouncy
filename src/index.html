@@ -4,8 +4,135 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Bouncy</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/index.css" />
     </head>
     <body>
-        <!--  -->
+        <div class="page-wrapper">
+            <!-- Home -->
+            <section class="home">
+                <div class="container">
+                    <header class="header">
+                        <div class="logo-wrapper">
+                            <h1 class="logo">Bouncy</h1>
+                        </div>
+                        <nav class="nav">
+                            <ul>
+                                <li><a href="#">Hello</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <div class="home__content">
+                        <h2 class="home__title">We Are Code Cafe</h2>
+                        <h3 class="home__subtitle">
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                            blanditiis praesentium voluptatum
+                        </h3>
+                    </div>
+                    <!-- TODO: on click btn - movement down  -->
+                    <div class="home__btn-wrapper">
+                        <button class="home__btn">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- This is bouncy -->
+            <section class="section this-is-bouncy">
+                <div class="container">
+                    <div class="this-is-bouncy__content">
+                        <div class="left-column">
+                            <div class="section__header">
+                                <h2 class="title">This is bouncy</h2>
+                            </div>
+                            <p class="text">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus
+                                qui blanditiis praesentium voluptatum deleniti atque
+                                corrupti quos dolores et quas molestias excepturi sint
+                                occaecati cupiditate non provident, similique sunt in
+                                culpa qui officia deserunt mollitia animi, id est laborum
+                                et dolorum fuga. Et harum quidem rerum facilis est et
+                                expedita distinctio.
+                            </p>
+                            <button class="this-is-bouncy__btn">Read More</button>
+                        </div>
+                        <div class="right-column">
+                            <img src="./img/this-is-bouncy/phone.jpg" alt="Phone" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About -->
+            <section class="section about">
+                <div class="container">
+                    <div class="section__header">
+                        <h2 class="title">Details about bouncy</h2>
+                        <h3 class="subtitle">
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                            blanditiis praesentium
+                        </h3>
+                    </div>
+                    <!-- TODO: added sort -->
+                    <div class="about__control-panel">
+                        <button class="control-panel-item">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="control-panel-item">
+                            <i class="fas fa-mouse"></i>
+                        </button>
+                        <button class="control-panel-item">
+                            <i class="far fa-lightbulb"></i>
+                        </button>
+                    </div>
+                    <div class="about__content">
+                        <h4 class="about__content-title">Creative Ideas</h4>
+                        <div class="about__inner">
+                            <div class="about__inner-left-column">
+                                <p>
+                                    At <span class="green">vero</span> eos et accusamus et
+                                    iusto odio dignissimos
+                                    <span class="black">ducimus</span> qui blanditiis
+                                    praesentium voluptatum deleniti atque corrupti quos
+                                    dolores
+                                </p>
+                            </div>
+                            <div class="about__inner-right-column">
+                                <p>
+                                    At vero eos et accusamus et iusto odio dignissimos
+                                    ducimus qui blanditiis praesentium voluptatum deleniti
+                                    atque corrupti quos dolores et quas molestias
+                                    <span class="green">excepturi</span> sint occaecati
+                                    cupiditate non provident,
+                                    <span class="black">similique</span> sunt in culpa qui
+                                    officia deserunt mollitia animi, id est laborum et
+                                    dolorum fuga. Et harum quidem r
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <script
+            crossorigin="anonymous"
+            src="https://kit.fontawesome.com/d3b9a0e4ec.js"
+        ></script>
     </body>
 </html>

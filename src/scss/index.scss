@@ -1,0 +1,49 @@
+@import "./utils/reset.scss";
+@import "./utils/vars.scss";
+
+@import "./components/home/index.scss";
+@import "./components/this-is-bouncy/index.scss";
+@import "./components/about/index.scss";
+
+.page-wrapper {
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 98px;
+}
+
+.section {
+    padding: 80px 0 100px;
+
+    .section__header {
+        text-align: center;
+        width: 464px;
+        margin: 0 auto;
+
+        .title {
+            margin-bottom: 30px;
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 20px;
+            color: $black;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        .subtitle {
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            color: $light-grey;
+            line-height: 1.6;
+        }
+    }
+
+    .text {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        color: $light-grey;
+    }
+}

@@ -1,0 +1,38 @@
+@mixin text-title {
+    margin-bottom: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: $light-black;
+}
+
+@mixin text {
+    font-family: "Open Sans", sans-serif;
+    color: $light-grey;
+    line-height: 1.6;
+
+    .green {
+        font-weight: bold;
+        color: $green;
+    }
+
+    .black {
+        font-weight: bold;
+        color: $black;
+    }
+}
+
+@mixin icons {
+    border: none;
+    border-radius: 50%;
+    background-color: $light-grey;
+    transition: background-color 0.4s ease-in-out;
+
+    &:hover {
+        background-color: $green;
+    }
+
+    i {
+        padding: 16px 14px;
+        color: #fff;
+    }
+}

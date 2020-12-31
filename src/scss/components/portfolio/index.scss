@@ -1,0 +1,117 @@
+.portfolio {
+    .container {
+        .filter-row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 570px;
+            margin: 0 auto 72px;
+
+            &__item {
+                position: relative;
+                font-family: "Open Sans", sans-serif;
+                border: none;
+                background-color: transparent;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 50%;
+                    height: 2px;
+                    margin: 0 auto -15px;
+                    background-color: $green;
+                    opacity: 0;
+                    transition: opacity 0.4s ease-in-out;
+                }
+
+                &:hover::after {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-between;
+
+            &__column {
+                &-item {
+                    position: relative;
+                    margin: 7px 3px;
+                    background-color: #000;
+
+                    &:hover {
+                        .img {
+                            opacity: 0.3;
+                        }
+
+                        .content {
+                            opacity: 1;
+                        }
+                    }
+
+                    .img {
+                        width: 100%;
+                        transition: opacity 0.4s ease-in-out;
+                    }
+
+                    .content {
+                        position: absolute;
+                        top: calc(100% / 12);
+                        left: 10%;
+                        width: 100%;
+                        max-width: 180px;
+                        opacity: 0;
+                        transition: opacity 0.4s ease-in-out;
+
+                        &__title {
+                            position: relative;
+                            margin-bottom: calc(100% / 12);
+                            font-family: "Source Sans Pro", sans-serif;
+                            font-size: 20px;
+                            color: $green;
+
+                            &::after {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                transform: translateY(10px);
+                                width: 23px;
+                                height: 1px;
+                                background-color: $green;
+                            }
+                        }
+
+                        &__text {
+                            margin-bottom: calc(100% / 29);
+                            font-family: "Open Sans", sans-serif;
+                            font-size: 12px;
+                            color: #b2b3b3;
+                            line-height: 2;
+                        }
+
+                        &__icons {
+                            display: flex;
+
+                            &-item {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin: 0 3px;
+                                width: 35px;
+                                height: 35px;
+                                background: #000;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

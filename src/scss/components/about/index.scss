@@ -4,79 +4,47 @@
     &__control-panel {
         display: flex;
         justify-content: center;
-        margin: 60px 0;
+        margin-bottom: 60px;
 
         .control-panel-item {
             margin: 0 14px;
-            border: none;
-            border-radius: 50%;
-            background-color: $light-grey;
-            transition: background-color 0.4s ease-in-out;
 
-            &:hover {
-                background-color: $green;
-            }
-
-            i {
-                padding: 16px 14px;
-                color: #fff;
-            }
+            @include icons;
         }
     }
 
     &__content-title {
-        margin-bottom: 40px;
-        font-family: "Open Sans", sans-serif;
-        font-size: 20px;
-        color: $light-black;
+        @include text-title;
     }
 
     &__inner {
         display: flex;
-        justify-content: space-between;
         font-family: "Open Sans", sans-serif;
     }
 
     &__inner-left-column {
-        width: 420px;
-        font-family: "Open Sans", sans-serif;
-        color: $light-grey;
-        line-height: 1.6;
+        width: 310px;
+        margin-right: 120px;
 
-        p {
-            .green {
-                font-weight: bold;
-                color: $green;
-            }
-
-            .black {
-                font-weight: bold;
-                color: $black;
-            }
-        }
+        @include text;
     }
 
     &__inner-right-column {
-        width: 100%;
+        display: block;
         margin: 0 auto;
+        width: 550px;
         font-family: "Open Sans", sans-serif;
         color: $light-grey;
         line-height: 1.6;
 
-        p {
-            display: block;
-            margin: 0 auto;
-            width: 550px;
+        .green {
+            font-weight: bold;
+            color: $green;
+        }
 
-            .green {
-                font-weight: bold;
-                color: $green;
-            }
-
-            .black {
-                font-weight: bold;
-                color: $black;
-            }
+        .black {
+            font-weight: bold;
+            color: $black;
         }
     }
 }

@@ -36,3 +36,68 @@
         color: #fff;
     }
 }
+
+@mixin submit {
+    display: flex;
+    background-image: url("../img/projects/4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 113px;
+
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .submit-text {
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        color: #c3e8e0;
+
+        .white {
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+
+    .submit-btn {
+        padding: 12px 23px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        color: #fff;
+        background-color: transparent;
+        border: 1px solid #fff;
+        border-radius: 18.5px;
+        transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+
+        &:hover {
+            color: $green;
+            background-color: #fff;
+        }
+    }
+}
+
+@mixin carousel-control {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    &__item {
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+        border: 1px solid $green;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.4s ease-in-out;
+
+        &:hover {
+            background-color: $green;
+        }
+
+        &.active {
+            background-color: $green;
+        }
+    }
+}

@@ -45,44 +45,7 @@
         }
     }
 
-    &__submit {
-        display: flex;
-        background-image: url("../img/projects/4.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 113px;
-
-        .flex {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        &-text {
-            font-family: "Open Sans", sans-serif;
-            font-size: 20px;
-            color: #c3e8e0;
-
-            .white {
-                color: #fff;
-                font-weight: bold;
-            }
-        }
-
-        &-btn {
-            padding: 12px 23px;
-            font-family: "Open Sans", sans-serif;
-            font-size: 16px;
-            color: #fff;
-            background-color: transparent;
-            border: 1px solid #fff;
-            border-radius: 18.5px;
-            transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
-
-            &:hover {
-                color: $green;
-                background-color: #fff;
-            }
-        }
+    &-submit {
+        @include submit;
     }
 }

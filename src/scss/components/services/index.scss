@@ -1,6 +1,6 @@
 .services {
     $services: &;
-    background-color: #f3f3f3;
+    background-color: $bg-grey;
     max-width: 1170px;
 
     &__inner {

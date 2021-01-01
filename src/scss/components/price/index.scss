@@ -1,0 +1,95 @@
+.price {
+    $self: &;
+    background-color: $bg-grey;
+
+    .container {
+        #{$self}__content {
+            display: flex;
+            justify-content: space-evenly;
+
+            .item {
+                position: relative;
+                background-color: #fff;
+
+                &:hover {
+                    .item__title,
+                    .item__body {
+                        opacity: 0;
+                    }
+
+                    .active {
+                        opacity: 1;
+
+                        transform: translateY(0);
+                    }
+                }
+
+                &__title {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 67px;
+                    font-family: "Open Sans", sans-serif;
+                    font-weight: bold;
+                    font-size: 20px;
+                    color: #fff;
+                    background-color: $green;
+                    text-transform: uppercase;
+                    transition: opacity 1s ease-in-out;
+                }
+
+                &__body {
+                    padding: 66px 64px 100px;
+                    text-align: center;
+                    transition: opacity 1s ease-in-out;
+
+                    &-price {
+                        margin-bottom: 10px;
+                        font-family: "Source Sans Pro", sans-serif;
+                        font-weight: bold;
+                        font-size: 40px;
+                        color: $green;
+                    }
+
+                    &-period {
+                        font-family: "Open Sans", sans-serif;
+                        font-size: 20px;
+                        color: $light-grey;
+                    }
+                }
+
+                .active {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    transform: translateY(-78%);
+                    z-index: 1;
+                    opacity: 0;
+                    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+
+                    &__title {
+                        @extend .item__title;
+                        display: flex;
+                        font-size: 16px;
+                        cursor: pointer;
+                        text-transform: none;
+                        opacity: 1 !important;
+                    }
+
+                    &__body {
+                        &-text {
+                            @extend .item__body-period;
+                            margin: 15px 0;
+                            padding-left: 34px;
+                            opacity: 1 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

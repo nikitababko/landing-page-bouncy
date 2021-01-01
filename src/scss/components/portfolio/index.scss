@@ -1,4 +1,7 @@
 .portfolio {
+    $self: &;
+    padding-bottom: 0 !important;
+
     .container {
         .filter-row {
             display: flex;
@@ -12,6 +15,20 @@
                 font-family: "Open Sans", sans-serif;
                 border: none;
                 background-color: transparent;
+
+                &.active::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 50%;
+                    height: 2px;
+                    margin: 0 auto -15px;
+                    background-color: $green;
+                    opacity: 1;
+                    transition: opacity 0.4s ease-in-out;
+                }
 
                 &::after {
                     content: "";
@@ -32,86 +49,109 @@
                 }
             }
         }
+    }
 
-        .gallery {
-            display: flex;
-            justify-content: space-between;
+    #{$self}__inner {
+        background-color: $bg-grey;
+        padding-bottom: 100px;
 
-            &__column {
-                &-item {
-                    position: relative;
-                    margin: 7px 3px;
-                    background-color: #000;
+        .container {
+            .gallery {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 40px;
 
-                    &:hover {
-                        .img {
-                            opacity: 0.3;
+                &__column {
+                    &-item {
+                        position: relative;
+                        margin: 7px 3px;
+                        background-color: #000;
+                        cursor: pointer;
+
+                        &:first-child {
+                            margin-top: 0;
                         }
 
-                        .content {
-                            opacity: 1;
+                        &:last-child {
+                            margin-top: 0;
                         }
-                    }
 
-                    .img {
-                        width: 100%;
-                        transition: opacity 0.4s ease-in-out;
-                    }
+                        &:hover {
+                            .img {
+                                opacity: 0.3;
+                            }
 
-                    .content {
-                        position: absolute;
-                        top: calc(100% / 12);
-                        left: 10%;
-                        width: 100%;
-                        max-width: 180px;
-                        opacity: 0;
-                        transition: opacity 0.4s ease-in-out;
-
-                        &__title {
-                            position: relative;
-                            margin-bottom: calc(100% / 12);
-                            font-family: "Source Sans Pro", sans-serif;
-                            font-size: 20px;
-                            color: $green;
-
-                            &::after {
-                                content: "";
-                                display: block;
-                                position: absolute;
-                                bottom: 0;
-                                left: 0;
-                                transform: translateY(10px);
-                                width: 23px;
-                                height: 1px;
-                                background-color: $green;
+                            .content {
+                                opacity: 1;
                             }
                         }
 
-                        &__text {
-                            margin-bottom: calc(100% / 29);
-                            font-family: "Open Sans", sans-serif;
-                            font-size: 12px;
-                            color: #b2b3b3;
-                            line-height: 2;
+                        .img {
+                            width: 100%;
+                            transition: opacity 0.4s ease-in-out;
                         }
 
-                        &__icons {
-                            display: flex;
+                        .content {
+                            position: absolute;
+                            top: calc(100% / 12);
+                            left: 10%;
+                            width: 100%;
+                            max-width: 180px;
+                            opacity: 0;
+                            transition: opacity 0.4s ease-in-out;
 
-                            &-item {
+                            &__title {
+                                position: relative;
+                                margin-bottom: calc(100% / 12);
+                                font-family: "Source Sans Pro", sans-serif;
+                                font-size: 20px;
+                                color: $green;
+
+                                &::after {
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    transform: translateY(10px);
+                                    width: 23px;
+                                    height: 1px;
+                                    background-color: $green;
+                                }
+                            }
+
+                            &__text {
+                                margin-bottom: calc(100% / 29);
+                                font-family: "Open Sans", sans-serif;
+                                font-size: 12px;
+                                color: #b2b3b3;
+                                line-height: 2;
+                            }
+
+                            &__icons {
                                 display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                margin: 0 3px;
-                                width: 35px;
-                                height: 35px;
-                                background: #000;
-                                border-radius: 50%;
+
+                                &-item {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin: 0 3px;
+                                    width: 35px;
+                                    height: 35px;
+                                    background: #000;
+                                    border-radius: 50%;
+                                }
                             }
                         }
                     }
                 }
             }
+        }
+
+        #{$self}__submit {
+            @include submit;
+            background-image: url("../img/portfolio/start.jpg");
+            height: 200px;
         }
     }
 }

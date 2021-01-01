@@ -1,0 +1,55 @@
+.testimonials {
+    $self: &;
+    background-color: $bg-grey;
+
+    .carousel {
+        padding: 100px 0;
+        width: 100%;
+        max-width: 1166px;
+        margin: 0 auto;
+        background-color: #fff;
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+
+            .avatar {
+                margin-right: 70px;
+            }
+
+            .description {
+                margin-bottom: 50px;
+
+                &__text {
+                    width: 720px;
+                    margin-bottom: 15px;
+                    font-family: "Open Sans", sans-serif;
+                    font-size: 16px;
+                    color: $light-grey;
+                    line-height: 1.6;
+                }
+
+                &__owner {
+                    margin-bottom: 10px;
+                    font-family: "Open Sans", sans-serif;
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: $green;
+                }
+
+                &__position {
+                    font-family: "Open Sans", sans-serif;
+                    font-size: 14px;
+                    color: $light-black;
+                    text-transform: uppercase;
+                }
+            }
+
+            .control {
+                @include carousel-control;
+                width: 100%;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

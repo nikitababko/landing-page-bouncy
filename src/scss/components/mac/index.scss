@@ -1,10 +1,7 @@
 .mac {
     $mac: &;
     background-image: url("../img/mac/bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    margin: 0 auto;
+    @include background;
     padding: 0;
 
     .container {

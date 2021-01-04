@@ -1,0 +1,36 @@
+.subscribe {
+    background-image: url("../img/subscribe/bg.jpg");
+    @include background;
+
+    .title {
+        color: #fff !important;
+    }
+
+    .subtitle {
+        margin-bottom: 60px;
+        color: $light-grey !important;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+
+        &-input {
+            padding: 14px 22px;
+            margin-right: 9px;
+            width: 355px;
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            background-color: transparent;
+            border: 1px solid #cfd3d4;
+
+            &::placeholder {
+                color: #cfd3d4;
+            }
+        }
+
+        &-btn {
+            @include submit-btn;
+        }
+    }
+}

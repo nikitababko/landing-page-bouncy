@@ -1,11 +1,8 @@
 .home {
     $home: &;
     background-image: url("../img/home/bg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include background;
     height: 100vh;
-    width: 100%;
     margin: 0 auto;
 
     &__content {

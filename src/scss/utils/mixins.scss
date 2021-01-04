@@ -101,3 +101,27 @@
         }
     }
 }
+
+@mixin background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@mixin submit-btn {
+    padding: 15px 50px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: $green;
+    border: none;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+
+    &:hover {
+        color: $green;
+        background-color: #fff;
+    }
+}

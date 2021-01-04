@@ -152,6 +152,11 @@
             @include submit;
             background-image: url("../img/portfolio/start.jpg");
             height: 200px;
+
+            .flex {
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
         }
     }
 }

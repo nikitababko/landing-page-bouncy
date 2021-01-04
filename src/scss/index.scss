@@ -1,6 +1,7 @@
 @import "./utils/reset.scss";
 @import "./utils/vars.scss";
 @import "./utils/mixins.scss";
+@import "../fonts/Icon-font-7-stroke-PIXEDEN-v-1.2.0/pe-icon-7-stroke/css/pe-icon-7-stroke.css";
 
 @import "./components/home/index.scss";
 @import "./components/this-is-bouncy/index.scss";
@@ -13,6 +14,8 @@
 @import "./components/testimonials/index.scss";
 @import "./components/news/index.scss";
 @import "./components/price/index.scss";
+@import "./components/subscribe/index.scss";
+@import "./components/contact/index.scss";
 
 .page-wrapper {
     overflow: hidden;

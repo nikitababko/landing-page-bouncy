@@ -103,9 +103,7 @@
     .contact-block {
         text-align: center;
         background-image: url("../img/team/2.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 100%;
+        @include background;
         height: 200px;
 
         &__title {

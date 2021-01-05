@@ -7,19 +7,20 @@
         display: flex;
 
         #{$services}__control {
+            display: flex;
+            flex-direction: column;
+
             &-item {
                 margin-bottom: 25px;
 
-                &:last-child {
-                    margin-bottom: 0;
+                @include icons;
+
+                &.active-services {
+                    background-color: $green;
                 }
 
-                button {
-                    @include icons;
-
-                    img {
-                        padding: 12px;
-                    }
+                img {
+                    padding: 12px;
                 }
             }
         }

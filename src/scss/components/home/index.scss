@@ -1,5 +1,62 @@
+.header {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 47px 98px 0;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    transition: padding 0.4s ease-in-out;
+
+    .logo-wrapper {
+        margin-right: 350px;
+
+        .logo {
+            font-family: "Open Sans", sans-serif;
+            font-weight: bold;
+            font-size: 25px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.header--fixed {
+    background-color: #7c664e;
+    position: fixed;
+    padding: 20px 98px 20px;
+}
+
+.nav {
+    ul {
+        display: flex;
+
+        li {
+            a {
+                position: relative;
+                padding: 2px 12px;
+                font-family: "Open Sans", sans-serif;
+                font-size: 16px;
+                color: $grey;
+                text-decoration: none;
+                border: 1px solid $grey;
+                border-radius: 16.5px;
+                border-color: transparent;
+                transition: border-color 0.4s ease-in-out;
+
+                &:hover {
+                    border-color: $grey;
+                }
+            }
+        }
+    }
+}
+
 .home {
-    $home: &;
+    $self: &;
     background-image: url("../img/home/bg.jpg");
     @include background;
     height: 100vh;
@@ -30,68 +87,7 @@
         margin-bottom: 33vh;
     }
 
-    &__btn-wrapper {
-        display: flex;
-        justify-content: center;
-
-        #{$home}__btn {
-            padding: 15px;
-            border: none;
-            border-radius: 50%;
-            background-color: $green;
-            color: #fff;
-            transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
-
-            &:hover {
-                color: $green;
-                background-color: #fff;
-            }
-
-            i {
-                transform: translateY(2px);
-            }
-        }
-    }
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 47px;
-    align-items: center;
-
-    .logo-wrapper {
-        .logo {
-            font-family: "Open Sans", sans-serif;
-            font-weight: bold;
-            font-size: 25px;
-            color: #fff;
-            text-transform: uppercase;
-        }
-    }
-}
-
-.nav {
-    ul {
-        display: flex;
-
-        li {
-            a {
-                position: relative;
-                padding: 2px 12px;
-                font-family: "Open Sans", sans-serif;
-                font-size: 16px;
-                color: $grey;
-                text-decoration: none;
-                border: 1px solid $grey;
-                border-radius: 16.5px;
-                border-color: transparent;
-                transition: border-color 0.4s ease-in-out;
-
-                &:hover {
-                    border-color: $grey;
-                }
-            }
-        }
+    .arrow__btn-wrapper {
+        @include arrow-btn-down;
     }
 }

@@ -16,7 +16,7 @@
                 border: none;
                 background-color: transparent;
 
-                &.active::after {
+                &.active-portfolio::after {
                     content: "";
                     position: absolute;
                     left: 0;

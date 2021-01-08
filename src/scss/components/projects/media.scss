@@ -1,0 +1,58 @@
+@media screen and (max-width: 1400px) {
+    .projects {
+        &__inner {
+            $self: &;
+
+            &-content {
+                flex-direction: column;
+
+                #{$self}-item {
+                    width: 333px;
+                    margin: 10px auto;
+
+                    .img-wrapper {
+                        #{$self}-img {
+                            width: 333px;
+                            height: 319px;
+                        }
+                    }
+                }
+            }
+
+            &-submit {
+                .container {
+                    padding: 0 10px;
+                }
+
+                .flex {
+                    flex-direction: column;
+                    justify-content: center;
+                }
+
+                .submit-text {
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobileL) {
+    .projects {
+        &__inner {
+            $self: &;
+
+            &-submit {
+                .submit-text {
+                    margin-bottom: 10px;
+                    font-size: 15px;
+                }
+
+                .submit-btn {
+                    padding: 6px 11px;
+                }
+            }
+        }
+    }
+}

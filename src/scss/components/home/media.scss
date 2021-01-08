@@ -1,0 +1,92 @@
+@media screen and (max-width: $laptop) {
+    .header {
+        .logo-wrapper {
+            margin-right: 250px;
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .header {
+        .logo-wrapper {
+            margin-right: 180px;
+        }
+    }
+}
+
+@media screen and (max-width: $tabletL) {
+    .header {
+        .nav {
+            position: absolute;
+            top: 65px;
+            left: -1px;
+            width: 100%;
+            background-color: #7c664e;
+            display: none;
+
+            &--active {
+                display: block;
+            }
+
+            ul {
+                flex-direction: column;
+                text-align: center;
+
+                li {
+                    margin: 20px 0;
+                }
+            }
+        }
+
+        .burger-menu {
+            position: absolute;
+            right: 100px;
+            padding: 12px 6px;
+            cursor: pointer;
+
+            &__btn {
+                position: relative;
+                width: 40px;
+                height: 3px;
+                background: #fff;
+                transition: background 0.4s linear;
+
+                &::before {
+                    position: absolute;
+                    top: -13px;
+                    display: block;
+                    width: 40px;
+                    height: 3px;
+                    background: #fff;
+                    content: "";
+                    transition: transform 0.4s linear;
+                }
+
+                &::after {
+                    position: absolute;
+                    top: 13px;
+                    display: block;
+                    width: 40px;
+                    height: 3px;
+                    background: #fff;
+                    content: "";
+                    transition: transform 0.4s linear;
+                }
+
+                &--active {
+                    background: transparent;
+
+                    &::before {
+                        transform-origin: 100% 0;
+                        transform: rotate(-45deg) translate(-1px, 0px);
+                    }
+
+                    &::after {
+                        transform-origin: 100% 0;
+                        transform: rotate(45deg) translate(2px, 1.5px);
+                    }
+                }
+            }
+        }
+    }
+}

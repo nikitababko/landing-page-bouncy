@@ -1,0 +1,49 @@
+@media screen and (max-width: $laptop) {
+    .services {
+        $self: &;
+
+        &__inner {
+            display: flex;
+            flex-direction: column;
+
+            #{$self}__control {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                &-item {
+                    margin: 0 50px 100px;
+                }
+            }
+        }
+
+        &__skills {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: $tabletM) {
+    .services {
+        $self: &;
+
+        &__inner {
+            #{$self}__control {
+                &-item {
+                    margin: 0 5px 50px;
+                }
+            }
+        }
+
+        &__skills {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            &-item {
+                margin: 50px auto;
+            }
+        }
+    }
+}

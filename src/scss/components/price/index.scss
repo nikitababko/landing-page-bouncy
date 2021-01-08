@@ -10,6 +10,7 @@
             .item {
                 position: relative;
                 background-color: #fff;
+                overflow-y: hidden;
 
                 &:hover {
                     .item__title,
@@ -19,7 +20,6 @@
 
                     .active {
                         opacity: 1;
-
                         transform: translateY(0);
                     }
                 }

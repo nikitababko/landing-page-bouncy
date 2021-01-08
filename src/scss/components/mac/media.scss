@@ -1,0 +1,39 @@
+@media screen and (max-width: $laptop) {
+    .mac {
+        $mac: &;
+        padding-top: 200px !important;
+
+        .container {
+            display: flex !important;
+            flex-direction: column-reverse !important;
+
+            .section__header {
+                width: 260px !important;
+                margin: 0 auto !important;
+                text-align: center;
+            }
+
+            #{$mac}__img-wrapper {
+                display: flex;
+                margin-bottom: 40px;
+                justify-content: center;
+                position: static !important;
+                transform: translateY(0) !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobileL) {
+    .mac {
+        $mac: &;
+
+        .container {
+            #{$mac}__img-wrapper {
+                img {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}

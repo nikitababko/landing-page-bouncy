@@ -30,6 +30,8 @@
 
                 .carousel {
                     &__item {
+                        flex-direction: column;
+
                         &-title {
                             margin-bottom: 16px;
                             font-family: "Open Sans", sans-serif;
@@ -75,11 +77,34 @@
                             line-height: 1.6;
                         }
 
-                        &-more {
-                            font-family: "Open Sans", sans-serif;
-                            font-size: 16px;
-                            color: #b2b3b3;
-                            cursor: pointer;
+                        .more {
+                            &__btn {
+                                margin-bottom: 20px;
+                                font-family: "Open Sans", sans-serif;
+                                font-size: 16px;
+                                color: #b2b3b3;
+                                background-color: transparent;
+                                border: none;
+
+                                &::before {
+                                    content: "+ ";
+                                }
+
+                                &--active {
+                                    &::before {
+                                        content: "- ";
+                                    }
+                                }
+                            }
+
+                            &__content {
+                                @extend .more__btn;
+                                opacity: 0;
+
+                                &--active {
+                                    opacity: 1;
+                                }
+                            }
                         }
                     }
                 }
@@ -105,3 +130,6 @@
         }
     }
 }
+
+// Carousel
+@include fade-carousel;

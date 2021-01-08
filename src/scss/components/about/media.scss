@@ -1,0 +1,39 @@
+@media screen and (max-width: $tabletL) {
+    .about {
+        $self: &;
+
+        &__content {
+            &-item {
+                #{$self}__inner {
+                    display: flex;
+                    flex-direction: column;
+
+                    &-left-column {
+                        width: 550px;
+                        margin: 0 auto 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tabletM) {
+    .about {
+        $self: &;
+
+        &__content {
+            &-item {
+                #{$self}__inner {
+                    &-left-column {
+                        width: 250px;
+                    }
+
+                    &-right-column {
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+}

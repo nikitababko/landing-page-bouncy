@@ -1,0 +1,12 @@
+@media screen and (max-width: $mobileM) {
+    .subscribe {
+        &__form {
+            flex-direction: column;
+
+            &-input {
+                width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

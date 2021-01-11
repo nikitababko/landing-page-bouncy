@@ -1,0 +1,12 @@
+@media screen and (max-width: $tabletL) {
+    .price {
+        &__content {
+            flex-direction: column;
+            padding: 0 45px;
+
+            &-item {
+                margin: 40px 0;
+            }
+        }
+    }
+}

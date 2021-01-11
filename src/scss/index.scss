@@ -26,6 +26,13 @@
 @import "./components/projects/media.scss";
 @import "./components/services/media.scss";
 @import "./components/mac/media.scss";
+@import "./components/portfolio/media.scss";
+@import "./components/team/media.scss";
+@import "./components/testimonials/media.scss";
+@import "./components/news/media.scss";
+@import "./components/price/media.scss";
+@import "./components/subscribe/media.scss";
+@import "./components/contact/media.scss";
 
 // Main
 html {
@@ -127,6 +134,22 @@ html {
 
         .burger-menu {
             right: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section {
+        .section__header {
+            width: 350px;
+        }
+    }
+}
+
+@media screen and (max-width: $mobileM) {
+    .section {
+        .section__header {
+            width: 300px !important;
         }
     }
 }

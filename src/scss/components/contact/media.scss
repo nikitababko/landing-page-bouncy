@@ -1,0 +1,21 @@
+@media screen and (max-width: $laptop) {
+    .contact {
+        &__content {
+            flex-direction: column;
+
+            &-item {
+                margin: 40px 0;
+            }
+        }
+
+        &__form {
+            .container {
+                flex-direction: column;
+
+                & > * {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

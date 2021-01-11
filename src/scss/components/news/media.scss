@@ -1,0 +1,32 @@
+@media screen and (max-width: 650px) {
+    .news {
+        &__inner {
+            flex-direction: column;
+
+            .control {
+                flex-direction: row !important;
+
+                &__item {
+                    margin: 0 5px !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .news {
+        &__inner {
+            .carousel {
+                &__item {
+                    width: 100%;
+                    max-width: 300px;
+
+                    &-text {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}

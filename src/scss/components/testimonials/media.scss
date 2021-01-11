@@ -1,0 +1,24 @@
+@media screen and (max-width: $tabletL) {
+    .testimonials {
+        .carousel {
+            &__item--testimonials {
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                flex-direction: column;
+
+                .avatar {
+                    margin-right: 0 !important;
+                    margin-bottom: 40px;
+                }
+
+                .description {
+                    &__text {
+                        width: 100% !important;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

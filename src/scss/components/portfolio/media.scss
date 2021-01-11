@@ -1,0 +1,27 @@
+@media screen and (max-width: 1100px) {
+    .portfolio {
+        &__inner {
+            .container {
+                .gallery {
+                    flex-wrap: wrap;
+                    justify-content: center !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio {
+        .container:first-child {
+            .filter-row {
+                flex-wrap: wrap;
+                justify-content: center !important;
+
+                &__item {
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+}

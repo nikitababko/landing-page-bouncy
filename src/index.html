@@ -1,1561 +1,1257 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bouncy</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300;900&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="./css/index.css" />
-    </head>
-    <body>
-        <div class="page-wrapper">
-            <!-- Home -->
-            <section id="home" class="home">
-                <header class="header">
-                    <div class="logo-wrapper">
-                        <h1 class="logo">Bouncy</h1>
-                    </div>
-                    <nav class="nav">
-                        <ul>
-                            <li><a href="#home">Hello</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#team">Team</a></li>
-                            <li><a href="#blog">Blog</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </nav>
-                    <div class="burger-menu">
-                        <div class="burger-menu__btn"></div>
-                    </div>
-                </header>
-                <div class="container">
-                    <div class="home__content">
-                        <h2 class="home__title">We Are Code Cafe</h2>
-                        <h3 class="home__subtitle">
-                            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                            blanditiis praesentium voluptatum
-                        </h3>
-                    </div>
-                    <div class="arrow__btn-wrapper">
-                        <button class="arrow__btn">
-                            <i class="pe-7s-angle-down"></i>
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- This is bouncy -->
-            <section class="section this-is-bouncy">
-                <div class="container">
-                    <div class="this-is-bouncy__content">
-                        <div class="left-column">
-                            <div class="section__header">
-                                <h2 class="title">This is bouncy</h2>
-                            </div>
-                            <p class="text">
-                                At vero eos et accusamus et iusto odio dignissimos ducimus
-                                qui blanditiis praesentium voluptatum deleniti atque
-                                corrupti quos dolores et quas molestias excepturi sint
-                                occaecati cupiditate non provident, similique sunt in
-                                culpa qui officia deserunt mollitia animi, id est laborum
-                                et dolorum fuga. Et harum quidem rerum facilis est et
-                                expedita distinctio.
-                            </p>
-                            <div>
-                                <button class="this-is-bouncy__btn">Read More</button>
-                            </div>
-                        </div>
-                        <div class="right-column">
-                            <img src="./img/this-is-bouncy/phone.jpg" alt="Phone" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- About -->
-            <section id="about" class="section about">
-                <div class="container container--active">
-                    <div class="section__header">
-                        <h2 class="title">Details about bouncy</h2>
-                        <h3 class="subtitle">
-                            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                            blanditiis praesentium
-                        </h3>
-                    </div>
-                    <div id="controlPanelAbout" class="about__control-panel">
-                        <button
-                            class="btn control-panel-item active"
-                            onclick="filterSelection('creative')"
-                        >
-                            <i class="far fa-heart"></i>
-                        </button>
-                        <button
-                            class="btn control-panel-item"
-                            onclick="filterSelection('programming')"
-                        >
-                            <i class="fas fa-mouse"></i>
-                        </button>
-                        <button
-                            class="btn control-panel-item"
-                            onclick="filterSelection('brain')"
-                        >
-                            <i class="far fa-lightbulb"></i>
-                        </button>
-                    </div>
-                    <div class="about__content">
-                        <div class="filterDiv creative about__content-item">
-                            <h4 class="about__content-title">Creative Ideas</h4>
-                            <div class="about__inner">
-                                <div class="about__inner-left-column">
-                                    At <span class="green">vero</span> eos et accusamus et
-                                    iusto odio dignissimos
-                                    <span class="black">ducimus</span> qui blanditiis
-                                    praesentium voluptatum deleniti atque corrupti quos
-                                    dolores
-                                </div>
-                                <div class="about__inner-right-column">
-                                    At vero eos et accusamus et iusto odio dignissimos
-                                    ducimus qui blanditiis praesentium voluptatum deleniti
-                                    atque corrupti quos dolores et quas molestias
-                                    <span class="green">excepturi</span> sint occaecati
-                                    cupiditate non provident,
-                                    <span class="black">similique</span> sunt in culpa qui
-                                    officia deserunt mollitia animi, id est laborum et
-                                    dolorum fuga. Et harum quidem r
-                                </div>
-                            </div>
-                        </div>
-                        <div class="filterDiv programming about__content-item">
-                            <h4 class="about__content-title">Programming</h4>
-                            <div class="about__inner">
-                                <div class="about__inner-left-column">
-                                    At <span class="green">vero</span> eos et accusamus et
-                                    iusto odio dignissimos
-                                    <span class="black">ducimus</span> qui blanditiis
-                                    praesentium voluptatum deleniti atque corrupti quos
-                                    dolores
-                                </div>
-                                <div class="about__inner-right-column">
-                                    At vero eos et accusamus et iusto odio dignissimos
-                                    ducimus qui blanditiis praesentium voluptatum deleniti
-                                    atque corrupti quos dolores et quas molestias
-                                    <span class="green">excepturi</span> sint occaecati
-                                    cupiditate non provident,
-                                    <span class="black">similique</span> sunt in culpa qui
-                                    officia deserunt mollitia animi, id est laborum et
-                                    dolorum fuga. Et harum quidem r
-                                </div>
-                            </div>
-                        </div>
-                        <div class="filterDiv brain about__content-item">
-                            <h4 class="about__content-title">Brain games</h4>
-                            <div class="about__inner">
-                                <div class="about__inner-left-column">
-                                    At <span class="green">vero</span> eos et accusamus et
-                                    iusto odio dignissimos
-                                    <span class="black">ducimus</span> qui blanditiis
-                                    praesentium voluptatum deleniti atque corrupti quos
-                                    dolores
-                                </div>
-                                <div class="about__inner-right-column">
-                                    At vero eos et accusamus et iusto odio dignissimos
-                                    ducimus qui blanditiis praesentium voluptatum deleniti
-                                    atque corrupti quos dolores et quas molestias
-                                    <span class="green">excepturi</span> sint occaecati
-                                    cupiditate non provident,
-                                    <span class="black">similique</span> sunt in culpa qui
-                                    officia deserunt mollitia animi, id est laborum et
-                                    dolorum fuga. Et harum quidem r
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Projects -->
-            <!-- TODO: при наведении происходит увеличние фотки, а не активная наоборот уменьшается -->
-            <section class="section projects">
-                <div class="container">
-                    <div class="section__header">
-                        <h2 class="title">Featured projects</h2>
-                        <h3 class="subtitle">
-                            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                            blanditiis praesentium
-                        </h3>
-                    </div>
-                </div>
-                <div class="projects__inner">
-                    <div class="projects__inner-content">
-                        <div class="projects__inner-item first">
-                            <div class="img-wrapper">
-                                <div class="projects__inner-title">Whiskey</div>
-                                <img
-                                    class="projects__inner-img"
-                                    src="./img/projects/1.jpg"
-                                    alt="Whiskey"
-                                />
-                            </div>
-                        </div>
-                        <div class="projects__inner-item">
-                            <div class="img-wrapper">
-                                <div class="projects__inner-title">Vintage</div>
-                                <img
-                                    class="projects__inner-img"
-                                    src="./img/projects/2.jpg"
-                                    alt="Vintage"
-                                />
-                            </div>
-                        </div>
-                        <div class="projects__inner-item">
-                            <div class="img-wrapper">
-                                <div class="projects__inner-title">Branding</div>
-                                <img
-                                    class="projects__inner-img"
-                                    src="./img/projects/3.jpg"
-                                    alt="Branding"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projects__inner-submit">
-                        <div class="container flex">
-                            <p class="submit-text">
-                                At vero eos et <span class="white">accusamus</span> et
-                                iusto odio dignissimos ducimus qui blanditiis
-                            </p>
-                            <button class="submit-btn">Submit Now</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Sevices -->
-            <section id="services" class="section services">
-                <div class="container">
-                    <div class="section__header">
-                        <h2 class="title">Our services</h2>
-                        <h3 class="subtitle">
-                            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                            blanditiis praesentium
-                        </h3>
-                    </div>
-
-                    <div class="services__inner">
-                        <div id="servicesControl" class="services__control">
-                            <button
-                                class="btn-services services__control-item active-services"
-                                onclick="filterSelectionServices('graphic')"
-                            >
-                                <img src="./img/services/tools.svg" alt="Tools" />
-                            </button>
-                            <button
-                                class="btn-services services__control-item"
-                                onclick="filterSelectionServices('paint')"
-                            >
-                                <img src="./img/services/paint.svg" alt="Tools" />
-                            </button>
-                            <button
-                                class="btn-services services__control-item"
-                                onclick="filterSelectionServices('joy')"
-                            >
-                                <img src="./img/services/joy.svg" alt="Tools" />
-                            </button>
-                            <button
-                                class="btn-services services__control-item"
-                                onclick="filterSelectionServices('plug')"
-                            >
-                                <img src="./img/services/plug.svg" alt="Tools" />
-                            </button>
-                        </div>
-                        <div class="filterDivServices graphic services__content">
-                            <h4 class="services__content-title">Graphic Design</h4>
-                            <div class="services__content-text">
-                                At vero eos et accusamus et
-                                <span class="green">iusto</span> odio dignissimos
-                                <span class="black">ducimus</span> qui blanditiis
-                                praesentium voluptatum deleniti
-                                <br />
-                                <br />
-                                quos dolores et quas molestias excepturi sint occaecati
-                                cupiditate non provident,
-                                <span class="green">similique sunt</span> in culpa qui
-                                officia deserunt mollitia animi, id est laborum et dolorum
-                                fuga.
-                            </div>
-                        </div>
-                        <div class="filterDivServices paint services__content">
-                            <h4 class="services__content-title">Paint</h4>
-                            <div class="services__content-text">
-                                At vero eos et accusamus et
-                                <span class="green">iusto</span> odio dignissimos
-                                <span class="black">ducimus</span> qui blanditiis
-                                praesentium voluptatum deleniti
-                                <br />
-                                <br />
-                                quos dolores et quas molestias excepturi sint occaecati
-                                cupiditate non provident,
-                                <span class="green">similique sunt</span> in culpa qui
-                                officia deserunt mollitia animi, id est laborum et dolorum
-                                fuga.
-                            </div>
-                        </div>
-                        <div class="filterDivServices joy services__content">
-                            <h4 class="services__content-title">Game developing</h4>
-                            <div class="services__content-text">
-                                At vero eos et accusamus et
-                                <span class="green">iusto</span> odio dignissimos
-                                <span class="black">ducimus</span> qui blanditiis
-                                praesentium voluptatum deleniti
-                                <br />
-                                <br />
-                                quos dolores et quas molestias excepturi sint occaecati
-                                cupiditate non provident,
-                                <span class="green">similique sunt</span> in culpa qui
-                                officia deserunt mollitia animi, id est laborum et dolorum
-                                fuga.
-                            </div>
-                        </div>
-                        <div class="filterDivServices plug services__content">
-                            <h4 class="services__content-title">Plug and play</h4>
-                            <div class="services__content-text">
-                                At vero eos et accusamus et
-                                <span class="green">iusto</span> odio dignissimos
-                                <span class="black">ducimus</span> qui blanditiis
-                                praesentium voluptatum deleniti
-                                <br />
-                                <br />
-                                quos dolores et quas molestias excepturi sint occaecati
-                                cupiditate non provident,
-                                <span class="green">similique sunt</span> in culpa qui
-                                officia deserunt mollitia animi, id est laborum et dolorum
-                                fuga.
-                            </div>
-                        </div>
-                        <div class="services__skills">
-                            <div class="services__skills-item skill-1">
-                                <div class="services__skills-width">
-                                    80 <span class="persent">%</span>
-                                </div>
-                                <div class="services__skills-name">Branding</div>
-                            </div>
-                            <div class="services__skills-item skill-2">
-                                <div class="services__skills-width">
-                                    75 <span class="persent">%</span>
-                                </div>
-                                <div class="services__skills-name">Web design</div>
-                            </div>
-                            <div class="services__skills-item skill-3">
-                                <div class="services__skills-width">
-                                    60 <span class="persent">%</span>
-                                </div>
-                                <div class="services__skills-name">UI/UX</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Mac impressed -->
-            <section class="section mac">
-                <div class="mac__bg"></div>
-                <div class="container">
-                    <div class="section__header">
-                        <h2 class="title">Impressed?</h2>
-                        <div class="mac__citation">
-                            <cite class="subtitle">
-                                At vero eos et accusamus et iusto odio dignissimos ducimus
-                                qui blanditiis praesentium voluptatum deleniti atque
-                                corrupti quos dolores et quas molestias
-                            </cite>
-                            <div class="mac__citation-name">- Abdullah Noman</div>
-                            <div class="mac__citation-position">
-                                Creatice director, <span class="green">code cafe</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mac__img-wrapper">
-                        <img src="./img/mac/mac.jpg" alt="Mac" />
-                    </div>
-                </div>
-            </section>
-
-            <!-- Portfolio -->
-            <section id="portfolio" class="section portfolio">
-                <div class="container">
-                    <div class="section__header">
-                        <h2 class="title">The portfolio</h2>
-                        <h3 class="subtitle">
-                            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                            blanditiis praesentium
-                        </h3>
-                    </div>
-                    <div id="servicesPortfolio" class="filter-row">
-                        <button
-                            class="btn-portfolio filter-row__item active-portfolio"
-                            onclick="filterSelectionPortfolio('allworks')"
-                        >
-                            All works
-                        </button>
-                        <button
-                            class="btn-portfolio filter-row__item"
-                            onclick="filterSelectionPortfolio('print')"
-                        >
-                            Print
-                        </button>
-                        <button
-                            class="btn-portfolio filter-row__item"
-                            onclick="filterSelectionPortfolio('identity')"
-                        >
-                            Identity
-                        </button>
-                        <button
-                            class="btn-portfolio filter-row__item"
-                            onclick="filterSelectionPortfolio('branding')"
-                        >
-                            Branding
-                        </button>
-                        <button
-                            class="btn-portfolio filter-row__item"
-                            onclick="filterSelectionPortfolio('web')"
-                        >
-                            Web
-                        </button>
-                        <button
-                            class="btn-portfolio filter-row__item"
-                            onclick="filterSelectionPortfolio('html')"
-                        >
-                            HTML
-                        </button>
-                        <button
-                            class="btn-portfolio filter-row__item"
-                            onclick="filterSelectionPortfolio('wordpress')"
-                        >
-                            Wordpress
-                        </button>
-                    </div>
-                </div>
-                <div class="portfolio__inner">
-                    <div class="container">
-                        <div class="gallery">
-                            <div class="gallery__column gallery__column-1">
-                                <div
-                                    class="filterDivPortfolio allworks print gallery__column-item"
-                                >
-                                    <img
-                                        class="img"
-                                        src="./img/portfolio/1.jpg"
-                                        alt="1"
-                                    />
-                                    <div class="content">
-                                        <div class="content__title">Title here</div>
-                                        <div class="content__text">
-                                            At vero eos et accusamus et iusto odio
-                                            dignissimos ducimus qui blanditiis praesentium
-                                        </div>
-                                        <div class="content__icons">
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/link.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/like.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="filterDivPortfolio allworks print gallery__column-item"
-                                >
-                                    <img
-                                        class="img"
-                                        src="./img/portfolio/2.jpg"
-                                        alt="2"
-                                    />
-                                    <div class="content">
-                                        <div class="content__title">Title here</div>
-                                        <div class="content__text">
-                                            At vero eos et accusamus et iusto odio
-                                            dignissimos ducimus qui blanditiis praesentium
-                                        </div>
-                                        <div class="content__icons">
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/link.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/like.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="filterDivPortfolio allworks identity gallery__column-item"
-                                >
-                                    <img
-                                        class="img"
-                                        src="./img/portfolio/3.jpg"
-                                        alt="3"
-                                    />
-                                    <div class="content">
-                                        <div class="content__title">Title here</div>
-                                        <div class="content__text">
-                                            At vero eos et accusamus et iusto odio
-                                            dignissimos ducimus qui blanditiis praesentium
-                                        </div>
-                                        <div class="content__icons">
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/link.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/like.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gallery__column gallery__column-2">
-                                <div
-                                    class="filterDivPortfolio allworks html gallery__column-item"
-                                >
-                                    <img
-                                        class="img"
-                                        src="./img/portfolio/4.jpg"
-                                        alt="4"
-                                    />
-                                    <div class="content">
-                                        <div class="content__title">Title here</div>
-                                        <div class="content__text">
-                                            At vero eos et accusamus et iusto odio
-                                            dignissimos ducimus qui blanditiis praesentium
-                                        </div>
-                                        <div class="content__icons">
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/link.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/like.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="filterDivPortfolio allworks branding gallery__column-item"
-                                >
-                                    <img
-                                        class="img"
-                                        src="./img/portfolio/5.jpg"
-                                        alt="5"
-                                    />
-                                    <div class="content">
-                                        <div class="content__title">Title here</div>
-                                        <div class="content__text">
-                                            At vero eos et accusamus et iusto odio
-                                            dignissimos ducimus qui blanditiis praesentium
-                                        </div>
-                                        <div class="content__icons">
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/link.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/like.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="filterDivPortfolio allworks web gallery__column-item"
-                                >
-                                    <img
-                                        class="img"
-                                        src="./img/portfolio/6.jpg"
-                                        alt="6"
-                                    />
-                                    <div class="content">
-                                        <div class="content__title">Title here</div>
-                                        <div class="content__text">
-                                            At vero eos et accusamus et iusto odio
-                                            dignissimos ducimus qui blanditiis praesentium
-                                        </div>
-                                        <div class="content__icons">
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/link.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/like.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gallery__column gallery__column-3">
-                                <div
-                                    class="filterDivPortfolio allworks identity gallery__column-item"
-                                >
-                                    <img
-                                        class="img"
-                                        src="./img/portfolio/7.jpg"
-                                        alt="7"
-                                    />
-                                    <div class="content">
-                                        <div class="content__title">Title here</div>
-                                        <div class="content__text">
-                                            At vero eos et accusamus et iusto odio
-                                            dignissimos ducimus qui blanditiis praesentium
-                                        </div>
-                                        <div class="content__icons">
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/link.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/like.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="filterDivPortfolio allworks wordpress gallery__column-item"
-                                >
-                                    <img
-                                        class="img"
-                                        src="./img/portfolio/8.jpg"
-                                        alt="8"
-                                    />
-                                    <div class="content">
-                                        <div class="content__title">Title here</div>
-                                        <div class="content__text">
-                                            At vero eos et accusamus et iusto odio
-                                            dignissimos ducimus qui blanditiis praesentium
-                                        </div>
-                                        <div class="content__icons">
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/link.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/like.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="filterDivPortfolio allworks html gallery__column-item"
-                                >
-                                    <img
-                                        class="img"
-                                        src="./img/portfolio/9.jpg"
-                                        alt="9"
-                                    />
-                                    <div class="content">
-                                        <div class="content__title">Title here</div>
-                                        <div class="content__text">
-                                            At vero eos et accusamus et iusto odio
-                                            dignissimos ducimus qui blanditiis praesentium
-                                        </div>
-                                        <div class="content__icons">
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/link.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/like.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gallery__column gallery__column-4">
-                                <div
-                                    class="filterDivPortfolio allworks web gallery__column-item"
-                                >
-                                    <img
-                                        class="img"
-                                        src="./img/portfolio/10.jpg"
-                                        alt="10"
-                                    />
-                                    <div class="content">
-                                        <div class="content__title">Title here</div>
-                                        <div class="content__text">
-                                            At vero eos et accusamus et iusto odio
-                                            dignissimos ducimus qui blanditiis praesentium
-                                        </div>
-                                        <div class="content__icons">
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/link.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/like.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="filterDivPortfolio allworks branding gallery__column-item"
-                                >
-                                    <img
-                                        class="img"
-                                        src="./img/portfolio/11.jpg"
-                                        alt="11"
-                                    />
-                                    <div class="content">
-                                        <div class="content__title">Title here</div>
-                                        <div class="content__text">
-                                            At vero eos et accusamus et iusto odio
-                                            dignissimos ducimus qui blanditiis praesentium
-                                        </div>
-                                        <div class="content__icons">
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/link.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/like.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="filterDivPortfolio allworks wordpress gallery__column-item"
-                                >
-                                    <img
-                                        class="img"
-                                        src="./img/portfolio/12.jpg"
-                                        alt="12"
-                                    />
-                                    <div class="content">
-                                        <div class="content__title">Title here</div>
-                                        <div class="content__text">
-                                            At vero eos et accusamus et iusto odio
-                                            dignissimos ducimus qui blanditiis praesentium
-                                        </div>
-                                        <div class="content__icons">
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/link.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                            <div class="content__icons-item">
-                                                <img
-                                                    src="./img/portfolio/like.svg"
-                                                    alt="Icon"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="portfolio__submit flex">
-                            <div class="container flex">
-                                <div class="submit-text">
-                                    At vero eos et <span class="white">accusamus</span> et
-                                    iusto odio dignissimos ducimus qui blanditiis
-                                </div>
-                                <button class="submit-btn">Start Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Team -->
-            <section id="team" class="section team">
-                <div class="container">
-                    <div class="section__header">
-                        <h2 class="title">The team</h2>
-                        <h3 class="subtitle">
-                            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                            blanditiis praesentium
-                        </h3>
-                    </div>
-                    <div class="slideshow-container carousel">
-                        <div class="person mySlides fade">
-                            <div class="person__avatar">
-                                <img src="./img/team/1.jpg" alt="Avatar" />
-                            </div>
-                            <div class="person__description">
-                                <div class="person__description-name">Abdullah Noman</div>
-                                <div class="person__description-position">
-                                    Creative director, code cafe
-                                </div>
-                                <div class="person__description-text">
-                                    At vero eos et accusamus et iusto odio dignissimos
-                                    ducimus qui blanditiis praesentium
-                                </div>
-                                <div class="person__description-skills skills">
-                                    <div class="skills__item">
-                                        <div class="skills__item-name">Branding</div>
-                                        <div class="skills__item-persent">80 %</div>
-                                        <div class="progress-bar">
-                                            <div class="progress-bar--green">
-                                                <div class="progress-bar">
-                                                    <div
-                                                        class="progress-bar__inner"
-                                                        style="width: 80%"
-                                                    ></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="skills__item">
-                                        <div class="skills__item-name">Web design</div>
-                                        <div class="skills__item-persent">65 %</div>
-                                        <div class="progress-bar">
-                                            <div class="progress-bar--green">
-                                                <div class="progress-bar">
-                                                    <div
-                                                        class="progress-bar__inner"
-                                                        style="width: 65%"
-                                                    ></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="skills__item">
-                                        <div class="skills__item-name">
-                                            User interface
-                                        </div>
-                                        <div class="skills__item-persent">75 %</div>
-                                        <div class="progress-bar">
-                                            <div class="progress-bar--green">
-                                                <div class="progress-bar">
-                                                    <div
-                                                        class="progress-bar__inner"
-                                                        style="width: 75%"
-                                                    ></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mySlides fade person">
-                            <div class="person__avatar">
-                                <img src="./img/team/2.jpg" alt="Avatar" />
-                            </div>
-                            <div class="person__description">
-                                <div class="person__description-name">Jhon Jhonson</div>
-                                <div class="person__description-position">
-                                    Senior developer, code cafe
-                                </div>
-                                <div class="person__description-text">
-                                    At vero eos et accusamus et iusto odio dignissimos
-                                    ducimus qui blanditiis praesentium
-                                </div>
-                                <div class="person__description-skills skills">
-                                    <div class="skills__item">
-                                        <div class="skills__item-name">Type Script</div>
-                                        <div class="skills__item-persent">70 %</div>
-                                        <div class="progress-bar">
-                                            <div class="progress-bar--green">
-                                                <div class="progress-bar">
-                                                    <div
-                                                        class="progress-bar__inner"
-                                                        style="width: 70%"
-                                                    ></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="skills__item">
-                                        <div class="skills__item-name">React</div>
-                                        <div class="skills__item-persent">95 %</div>
-                                        <div class="progress-bar">
-                                            <div class="progress-bar--green">
-                                                <div class="progress-bar">
-                                                    <div
-                                                        class="progress-bar__inner"
-                                                        style="width: 95%"
-                                                    ></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="skills__item">
-                                        <div class="skills__item-name">Angular</div>
-                                        <div class="skills__item-persent">95 %</div>
-                                        <div class="progress-bar">
-                                            <div class="progress-bar--green">
-                                                <div class="progress-bar">
-                                                    <div
-                                                        class="progress-bar__inner"
-                                                        style="width: 95%"
-                                                    ></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mySlides fade person">
-                            <div class="person__avatar">
-                                <img src="./img/team/3.jpg" alt="Avatar" />
-                            </div>
-                            <div class="person__description">
-                                <div class="person__description-name">Akash Mahavir</div>
-                                <div class="person__description-position">
-                                    Middle developer, code cafe
-                                </div>
-                                <div class="person__description-text">
-                                    At vero eos et accusamus et iusto odio dignissimos
-                                    ducimus qui blanditiis praesentium
-                                </div>
-                                <div class="person__description-skills skills">
-                                    <div class="skills__item">
-                                        <div class="skills__item-name">Java Script</div>
-                                        <div class="skills__item-persent">95 %</div>
-                                        <div class="progress-bar">
-                                            <div class="progress-bar--green">
-                                                <div class="progress-bar">
-                                                    <div
-                                                        class="progress-bar__inner"
-                                                        style="width: 95%"
-                                                    ></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="skills__item">
-                                        <div class="skills__item-name">React</div>
-                                        <div class="skills__item-persent">45 %</div>
-                                        <div class="progress-bar">
-                                            <div class="progress-bar--green">
-                                                <div class="progress-bar">
-                                                    <div
-                                                        class="progress-bar__inner"
-                                                        style="width: 45%"
-                                                    ></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="skills__item">
-                                        <div class="skills__item-name">Angular</div>
-                                        <div class="skills__item-persent">25 %</div>
-                                        <div class="progress-bar">
-                                            <div class="progress-bar--green">
-                                                <div class="progress-bar">
-                                                    <div
-                                                        class="progress-bar__inner"
-                                                        style="width: 25%"
-                                                    ></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="control">
-                            <div
-                                class="dot control__item active"
-                                onclick="currentSlide(1)"
-                            ></div>
-                            <div
-                                class="dot control__item"
-                                onclick="currentSlide(2)"
-                            ></div>
-                            <div
-                                class="dot control__item"
-                                onclick="currentSlide(3)"
-                            ></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-block">
-                    <div class="contact-block__title">Already Loved Us? Let's talk!</div>
-                    <div class="contact-block__btn-wrap">
-                        <a href="#contact" class="contact-block__btn">Contact Us</a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Testimonials -->
-            <section class="section testimonials">
-                <div class="container">
-                    <div class="section__header">
-                        <h2 class="title">Testimonials</h2>
-                        <h3 class="subtitle">
-                            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                            blanditiis praesentium
-                        </h3>
-                    </div>
-                </div>
-                <div class="carousel">
-                    <div class="container">
-                        <div
-                            class="mySlidesTestimonials carousel__item--testimonials fade"
-                        >
-                            <div class="avatar">
-                                <img src="./img/testimonials/1.jpg" alt="Avatar" />
-                            </div>
-                            <div class="description">
-                                <div class="description__text">
-                                    At vero eos et accusamus et iusto odio dignissimos
-                                    ducimus qui blanditiis praesentium voluptatum deleniti
-                                    atque corrupti quos dolores et quas molestias
-                                    excepturi sint occaecati cupiditate non provident,
-                                    similique sunt in culpa qui officia deserunt mollitia.
-                                </div>
-                                <div class="description__owner">Partho</div>
-                                <div class="description__position">
-                                    Founder, artways bd
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="mySlidesTestimonials carousel__item--testimonials fade"
-                        >
-                            <div class="avatar">
-                                <img src="./img/testimonials/2.png" alt="Avatar" />
-                            </div>
-                            <div class="description">
-                                <div class="description__text">
-                                    At vero eos et accusamus et iusto odio dignissimos
-                                    ducimus qui blanditiis praesentium voluptatum deleniti
-                                    atque corrupti quos dolores et quas molestias
-                                    excepturi sint occaecati cupiditate non provident,
-                                    similique sunt in culpa qui officia deserunt mollitia.
-                                </div>
-                                <div class="description__owner">Nikita</div>
-                                <div class="description__position">
-                                    Developer, artways bd
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="mySlidesTestimonials carousel__item--testimonials fade"
-                        >
-                            <div class="avatar">
-                                <img src="./img/testimonials/3.png" alt="Avatar" />
-                            </div>
-                            <div class="description">
-                                <div class="description__text">
-                                    At vero eos et accusamus et iusto odio dignissimos
-                                    ducimus qui blanditiis praesentium voluptatum deleniti
-                                    atque corrupti quos dolores et quas molestias
-                                    excepturi sint occaecati cupiditate non provident,
-                                    similique sunt in culpa qui officia deserunt mollitia.
-                                </div>
-                                <div class="description__owner">Mika</div>
-                                <div class="description__position">
-                                    Designer, artways bd
-                                </div>
-                            </div>
-                        </div>
-                        <div class="control">
-                            <div
-                                class="dot-testimonials control__item active"
-                                onclick="currentSlideTestimonials(1)"
-                            ></div>
-                            <div
-                                class="dot-testimonials control__item"
-                                onclick="currentSlideTestimonials(2)"
-                            ></div>
-                            <div
-                                class="dot-testimonials control__item"
-                                onclick="currentSlideTestimonials(3)"
-                            ></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Latest news -->
-            <section id="blog" class="section news">
-                <div class="container">
-                    <div class="section__header">
-                        <h2 class="title">Latest news</h2>
-                        <h3 class="subtitle">
-                            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                            blanditiis praesentium
-                        </h3>
-                    </div>
-                    <div class="container">
-                        <div class="news__inner">
-                            <div class="carousel">
-                                <div class="mySlidesNews carousel__item fade">
-                                    <div class="carousel__item-title">
-                                        The trending Landing Pages
-                                    </div>
-                                    <div class="carousel__item-author">
-                                        by <span class="green">Kabir Uddin</span>
-                                    </div>
-                                    <div class="info">
-                                        <div class="info__likes info__item">
-                                            6950 Likes
-                                        </div>
-                                        <div class="info__comments info__item">
-                                            243 Commens
-                                        </div>
-                                        <div class="info__shares">703 Shares</div>
-                                    </div>
-                                    <div class="carousel__item-text">
-                                        At vero eos et accusamus et iusto odio dignissimos
-                                        ducimus qui blanditiis praesentium voluptatum
-                                        deleniti atque corrupti quos dolores et quas
-                                        molestias excepturi sint occaecati cupiditate non
-                                        provident, similique sunt in culpa qui officia
-                                        deserunt mollitia animi, id est laborum et dolorum
-                                        fuga. Et harum quidem rerum facilis est et
-                                        expedita distinctio...
-                                    </div>
-                                    <div class="carousel__item-more more">
-                                        <button class="more__btn">Read more</button>
-                                        <p class="more__content">
-                                            At vero eos et accusamus et iusto odio
-                                            dignissimos. Et harum quidem rerum facilis est
-                                            et expedita distinctio.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="mySlidesNews carousel__item fade">
-                                    <div class="carousel__item-title">
-                                        The book about me
-                                    </div>
-                                    <div class="carousel__item-author">
-                                        by <span class="green">Nikita Mumber</span>
-                                    </div>
-                                    <div class="info">
-                                        <div class="info__likes info__item">
-                                            2250 Likes
-                                        </div>
-                                        <div class="info__comments info__item">
-                                            643 Commens
-                                        </div>
-                                        <div class="info__shares">1703 Shares</div>
-                                    </div>
-                                    <div class="carousel__item-text">
-                                        At vero eos et accusamus et iusto odio dignissimos
-                                        ducimus qui blanditiis praesentium voluptatum
-                                        deleniti atque corrupti quos dolores et quas
-                                        molestias excepturi sint occaecati cupiditate non
-                                        provident, similique sunt in culpa qui officia
-                                        deserunt mollitia animi, id est laborum et dolorum
-                                        fuga. Et harum quidem rerum facilis est et
-                                        expedita distinctio...
-                                    </div>
-                                    <div class="carousel__item-more more">
-                                        <button class="more__btn">Read more</button>
-                                        <p class="more__content">
-                                            At vero eos et accusamus et iusto odio
-                                            dignissimos. Et harum quidem rerum facilis est
-                                            et expedita distinctio.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="mySlidesNews carousel__item fade">
-                                    <div class="carousel__item-title">The villiage</div>
-                                    <div class="carousel__item-author">
-                                        by <span class="green">Akbar Hasanov</span>
-                                    </div>
-                                    <div class="info">
-                                        <div class="info__likes info__item">
-                                            450 Likes
-                                        </div>
-                                        <div class="info__comments info__item">
-                                            1243 Commens
-                                        </div>
-                                        <div class="info__shares">103 Shares</div>
-                                    </div>
-                                    <div class="carousel__item-text">
-                                        At vero eos et accusamus et iusto odio dignissimos
-                                        ducimus qui blanditiis praesentium voluptatum
-                                        deleniti atque corrupti quos dolores et quas
-                                        molestias excepturi sint occaecati cupiditate non
-                                        provident, similique sunt in culpa qui officia
-                                        deserunt mollitia animi, id est laborum et dolorum
-                                        fuga. Et harum quidem rerum facilis est et
-                                        expedita distinctio...
-                                    </div>
-                                    <div class="carousel__item-more more">
-                                        <button class="more__btn">Read more</button>
-                                        <p class="more__content">
-                                            At vero eos et accusamus et iusto odio
-                                            dignissimos. Et harum quidem rerum facilis est
-                                            et expedita distinctio.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="control">
-                                <div
-                                    class="dot-news control__item active"
-                                    onclick="currentSlideNews(1)"
-                                ></div>
-                                <div
-                                    class="dot-news control__item"
-                                    onclick="currentSlideNews(2)"
-                                ></div>
-                                <div
-                                    class="dot-news control__item"
-                                    onclick="currentSlideNews(3)"
-                                ></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Price -->
-            <section class="section price">
-                <div class="container">
-                    <div class="section__header">
-                        <h2 class="title">Our price</h2>
-                        <h3 class="subtitle">
-                            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                            blanditiis praesentium
-                        </h3>
-                    </div>
-                    <div class="price__content">
-                        <div class="price__content-item item">
-                            <div class="item__title">Premium</div>
-                            <div class="item__body">
-                                <div class="item__body-price">$ 60</div>
-                                <div class="item__body-period">Per Month</div>
-                            </div>
-
-                            <div class="active">
-                                <div class="active__body">
-                                    <div class="active__body-text">Full Branding</div>
-                                    <div class="active__body-text">
-                                        Project Management
-                                    </div>
-                                    <div class="active__body-text">
-                                        Unlimited Revisions
-                                    </div>
-                                    <div class="active__body-text">24/7 h Service</div>
-                                    <div class="active__body-text">Free Domain</div>
-                                    <div class="active__body-text">Free Hosting</div>
-                                </div>
-                                <div class="active__title">
-                                    Let's Start
-                                    <img
-                                        src="./img/price/angle-right.svg"
-                                        alt="Angle-right"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="price__content-item item">
-                            <div class="item__title">Full</div>
-                            <div class="item__body">
-                                <div class="item__body-price">$ 70</div>
-                                <div class="item__body-period">Per Month</div>
-                            </div>
-
-                            <div class="active">
-                                <div class="active__body">
-                                    <div class="active__body-text">Full Branding</div>
-                                    <div class="active__body-text">
-                                        Project Management
-                                    </div>
-                                    <div class="active__body-text">
-                                        Unlimited Revisions
-                                    </div>
-                                    <div class="active__body-text">24/7 h Service</div>
-                                    <div class="active__body-text">Free Domain</div>
-                                    <div class="active__body-text">Free Hosting</div>
-                                </div>
-                                <div class="active__title">
-                                    Let's Start
-                                    <img
-                                        src="./img/price/angle-right.svg"
-                                        alt="Angle-right"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="price__content-item item">
-                            <div class="item__title">Exclusive</div>
-                            <div class="item__body">
-                                <div class="item__body-price">$ 80</div>
-                                <div class="item__body-period">Per Month</div>
-                            </div>
-
-                            <div class="active">
-                                <div class="active__body">
-                                    <div class="active__body-text">Full Branding</div>
-                                    <div class="active__body-text">
-                                        Project Management
-                                    </div>
-                                    <div class="active__body-text">
-                                        Unlimited Revisions
-                                    </div>
-                                    <div class="active__body-text">24/7 h Service</div>
-                                    <div class="active__body-text">Free Domain</div>
-                                    <div class="active__body-text">Free Hosting</div>
-                                </div>
-                                <div class="active__title">
-                                    Let's Start
-                                    <img
-                                        src="./img/price/angle-right.svg"
-                                        alt="Angle-right"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Subscribe -->
-            <section class="section subscribe">
-                <div class="container">
-                    <div class="section__header">
-                        <h2 class="title">Subscribe us</h2>
-                        <h3 class="subtitle">
-                            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                            blanditiis praesentium
-                        </h3>
-                    </div>
-                    <div class="subscribe__form">
-                        <input
-                            class="subscribe__form-input"
-                            type="email"
-                            name="email"
-                            placeholder="Email Address"
-                        />
-                        <button class="subscribe__form-btn">Submit</button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Contact -->
-            <section id="contact" class="section contact">
-                <div class="container">
-                    <div class="section__header">
-                        <h2 class="title">Contact us</h2>
-                        <h3 class="subtitle">
-                            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                            blanditiis praesentium
-                        </h3>
-                    </div>
-                    <div class="contact__content">
-                        <div class="contact__content-item item">
-                            <div class="item__img-wrap">
-                                <img
-                                    class="item__img"
-                                    src="./img/contact/1.jpg"
-                                    alt="Image"
-                                />
-                                <i class="pe-7s-mail"></i>
-                            </div>
-                            <p class="item__title">Email</p>
-                            <p class="item__text">hello@codecafe.com</p>
-                            <p class="item__text">Personal@codecafe.com</p>
-                        </div>
-                        <div class="contact__content-item item">
-                            <div class="item__img-wrap">
-                                <img
-                                    class="item__img"
-                                    src="./img/contact/2.jpg"
-                                    alt="Image"
-                                />
-                                <i class="pe-7s-map-marker"></i>
-                            </div>
-                            <p class="item__title">Our office</p>
-                            <p class="item__text">240 Bhatikhana, 8200 Barisal</p>
-                            <p class="item__text">Bangladesh</p>
-                        </div>
-                        <div class="contact__content-item item">
-                            <div class="item__img-wrap">
-                                <img
-                                    class="item__img"
-                                    src="./img/contact/3.jpg"
-                                    alt="Image"
-                                />
-                                <i class="pe-7s-call"></i>
-                            </div>
-                            <p class="item__title">Phone</p>
-                            <p class="item__text">+00 11 66 99 66 44</p>
-                            <p class="item__text">11 99 66 44 065</p>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact__form">
-                    <div class="container">
-                        <input type="text" placeholder="Your name" />
-                        <input type="email" placeholder="Email address" />
-                        <input type="text" placeholder="Subject" />
-                        <textarea></textarea>
-                        <button class="contact__form-btn">Submit now</button>
-                    </div>
-                </form>
-            </section>
-
-            <!-- Footer -->
-            <footer class="section footer">
-                <div class="footer__map">
-                    <iframe
-                        class="footer__map-iframe"
-                        width="520"
-                        height="400"
-                        frameborder="0"
-                        scrolling="no"
-                        marginheight="0"
-                        marginwidth="0"
-                        src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20glockenhof+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-                    ></iframe>
-                    <div class="footer__inner">
-                        <p class="footer__inner-text">Find us on the map</p>
-                        <div class="arrow__btn-wrapper">
-                            <a class="arrow__btn">
-                                <i class="pe-7s-angle-down"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__content">
-                    <h2 class="footer__content-title">Bouncy</h2>
-                    <p class="footer__content-rights">
-                        Copyright 2015. All rights Reserved
-                    </p>
-                    <div class="footer__content-social social">
-                        <a
-                            href="#"
-                            class="social__link"
-                            target="_blank"
-                            rel="nofollow noopener"
-                            ><i class="fab fa-facebook-f"></i
-                        ></a>
-                        <a
-                            href="#"
-                            class="social__link"
-                            target="_blank"
-                            rel="nofollow noopener"
-                        >
-                            <i class="fab fa-twitter"> </i>
-                        </a>
-                        <a
-                            href="#"
-                            class="social__link"
-                            target="_blank"
-                            rel="nofollow noopener"
-                            ><i class="fab fa-linkedin-in"></i
-                        ></a>
-                        <a
-                            href="#"
-                            class="social__link"
-                            target="_blank"
-                            rel="nofollow noopener"
-                        >
-                            <i class="fab fa-instagram"></i
-                        ></a>
-                        <a
-                            href="#"
-                            class="social__link"
-                            target="_blank"
-                            rel="nofollow noopener"
-                        >
-                            <i class="fab fa-telegram-plane"></i
-                        ></a>
-                    </div>
-                </div>
-            </footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bouncy</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <!-- Home -->
+      <section id="home" class="home">
+        <header class="header">
+          <div class="logo-wrapper">
+            <h1 class="logo">Bouncy</h1>
+          </div>
+          <nav class="nav">
+            <ul>
+              <li><a href="#home">Hello</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="burger-menu">
+            <div class="burger-menu__btn"></div>
+          </div>
+        </header>
+        <div class="container">
+          <div class="home__content">
+            <h2 class="home__title">We Are Code Cafe</h2>
+            <h3 class="home__subtitle">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+              praesentium voluptatum
+            </h3>
+          </div>
+          <div class="arrow__btn-wrapper">
+            <button class="arrow__btn">
+              <i class="pe-7s-angle-down"></i>
+            </button>
+          </div>
         </div>
+      </section>
 
-        <!-- Icons -->
-        <script
-            crossorigin="anonymous"
-            src="https://kit.fontawesome.com/d3b9a0e4ec.js"
-        ></script>
+      <!-- This is bouncy -->
+      <section class="section this-is-bouncy">
+        <div class="container">
+          <div class="this-is-bouncy__content">
+            <div class="left-column">
+              <div class="section__header">
+                <h2 class="title">This is bouncy</h2>
+              </div>
+              <p class="text">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                molestias excepturi sint occaecati cupiditate non provident, similique
+                sunt in culpa qui officia deserunt mollitia animi, id est laborum et
+                dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+              </p>
+              <div>
+                <button class="this-is-bouncy__btn">Read More</button>
+              </div>
+            </div>
+            <div class="right-column">
+              <img src="./img/this-is-bouncy/phone.jpg" alt="Phone" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Local -->
-        <script src="./js/header.js"></script>
-        <script src="./js/arrowDown.js"></script>
-        <script src="./js/filterAbout.js"></script>
-        <script src="./js/test.js"></script>
-        <script src="./js/filterServices.js"></script>
-        <script src="./js/carouselTeam.js"></script>
-        <script src="./js/carouselTestimonials.js"></script>
-        <script src="./js/latestNews.js"></script>
-        <script src="./js/portfolio.js"></script>
-    </body>
+      <!-- About -->
+      <section id="about" class="section about">
+        <div class="container container--active">
+          <div class="section__header">
+            <h2 class="title">Details about bouncy</h2>
+            <h3 class="subtitle">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+              praesentium
+            </h3>
+          </div>
+          <div id="controlPanelAbout" class="about__control-panel">
+            <button
+              class="btn control-panel-item active"
+              onclick="filterSelection('creative')"
+            >
+              <i class="far fa-heart"></i>
+            </button>
+            <button
+              class="btn control-panel-item"
+              onclick="filterSelection('programming')"
+            >
+              <i class="fas fa-mouse"></i>
+            </button>
+            <button class="btn control-panel-item" onclick="filterSelection('brain')">
+              <i class="far fa-lightbulb"></i>
+            </button>
+          </div>
+          <div class="about__content">
+            <div class="filterDiv creative about__content-item">
+              <h4 class="about__content-title">Creative Ideas</h4>
+              <div class="about__inner">
+                <div class="about__inner-left-column">
+                  At <span class="green">vero</span> eos et accusamus et iusto odio
+                  dignissimos <span class="black">ducimus</span> qui blanditiis
+                  praesentium voluptatum deleniti atque corrupti quos dolores
+                </div>
+                <div class="about__inner-right-column">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+                  et quas molestias
+                  <span class="green">excepturi</span> sint occaecati cupiditate non
+                  provident, <span class="black">similique</span> sunt in culpa qui
+                  officia deserunt mollitia animi, id est laborum et dolorum fuga. Et
+                  harum quidem r
+                </div>
+              </div>
+            </div>
+            <div class="filterDiv programming about__content-item">
+              <h4 class="about__content-title">Programming</h4>
+              <div class="about__inner">
+                <div class="about__inner-left-column">
+                  At <span class="green">vero</span> eos et accusamus et iusto odio
+                  dignissimos <span class="black">ducimus</span> qui blanditiis
+                  praesentium voluptatum deleniti atque corrupti quos dolores
+                </div>
+                <div class="about__inner-right-column">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+                  et quas molestias
+                  <span class="green">excepturi</span> sint occaecati cupiditate non
+                  provident, <span class="black">similique</span> sunt in culpa qui
+                  officia deserunt mollitia animi, id est laborum et dolorum fuga. Et
+                  harum quidem r
+                </div>
+              </div>
+            </div>
+            <div class="filterDiv brain about__content-item">
+              <h4 class="about__content-title">Brain games</h4>
+              <div class="about__inner">
+                <div class="about__inner-left-column">
+                  At <span class="green">vero</span> eos et accusamus et iusto odio
+                  dignissimos <span class="black">ducimus</span> qui blanditiis
+                  praesentium voluptatum deleniti atque corrupti quos dolores
+                </div>
+                <div class="about__inner-right-column">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+                  et quas molestias
+                  <span class="green">excepturi</span> sint occaecati cupiditate non
+                  provident, <span class="black">similique</span> sunt in culpa qui
+                  officia deserunt mollitia animi, id est laborum et dolorum fuga. Et
+                  harum quidem r
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <!-- TODO: при наведении происходит увеличние фотки, а не активная наоборот уменьшается -->
+      <section class="section projects">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="title">Featured projects</h2>
+            <h3 class="subtitle">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+              praesentium
+            </h3>
+          </div>
+        </div>
+        <div class="projects__inner">
+          <div class="projects__inner-content">
+            <div class="projects__inner-item first">
+              <div class="img-wrapper">
+                <div class="projects__inner-title">Whiskey</div>
+                <img
+                  class="projects__inner-img"
+                  src="./img/projects/1.jpg"
+                  alt="Whiskey"
+                />
+              </div>
+            </div>
+            <div class="projects__inner-item">
+              <div class="img-wrapper">
+                <div class="projects__inner-title">Vintage</div>
+                <img
+                  class="projects__inner-img"
+                  src="./img/projects/2.jpg"
+                  alt="Vintage"
+                />
+              </div>
+            </div>
+            <div class="projects__inner-item">
+              <div class="img-wrapper">
+                <div class="projects__inner-title">Branding</div>
+                <img
+                  class="projects__inner-img"
+                  src="./img/projects/3.jpg"
+                  alt="Branding"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="projects__inner-submit">
+            <div class="container flex">
+              <p class="submit-text">
+                At vero eos et <span class="white">accusamus</span> et iusto odio
+                dignissimos ducimus qui blanditiis
+              </p>
+              <button class="submit-btn">Submit Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sevices -->
+      <section id="services" class="section services">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="title">Our services</h2>
+            <h3 class="subtitle">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+              praesentium
+            </h3>
+          </div>
+
+          <div class="services__inner">
+            <div id="servicesControl" class="services__control">
+              <button
+                class="btn-services services__control-item active-services"
+                onclick="filterSelectionServices('graphic')"
+              >
+                <img src="./img/services/tools.svg" alt="Tools" />
+              </button>
+              <button
+                class="btn-services services__control-item"
+                onclick="filterSelectionServices('paint')"
+              >
+                <img src="./img/services/paint.svg" alt="Tools" />
+              </button>
+              <button
+                class="btn-services services__control-item"
+                onclick="filterSelectionServices('joy')"
+              >
+                <img src="./img/services/joy.svg" alt="Tools" />
+              </button>
+              <button
+                class="btn-services services__control-item"
+                onclick="filterSelectionServices('plug')"
+              >
+                <img src="./img/services/plug.svg" alt="Tools" />
+              </button>
+            </div>
+            <div class="filterDivServices graphic services__content">
+              <h4 class="services__content-title">Graphic Design</h4>
+              <div class="services__content-text">
+                At vero eos et accusamus et
+                <span class="green">iusto</span> odio dignissimos
+                <span class="black">ducimus</span> qui blanditiis praesentium voluptatum
+                deleniti
+                <br />
+                <br />
+                quos dolores et quas molestias excepturi sint occaecati cupiditate non
+                provident,
+                <span class="green">similique sunt</span> in culpa qui officia deserunt
+                mollitia animi, id est laborum et dolorum fuga.
+              </div>
+            </div>
+            <div class="filterDivServices paint services__content">
+              <h4 class="services__content-title">Paint</h4>
+              <div class="services__content-text">
+                At vero eos et accusamus et
+                <span class="green">iusto</span> odio dignissimos
+                <span class="black">ducimus</span> qui blanditiis praesentium voluptatum
+                deleniti
+                <br />
+                <br />
+                quos dolores et quas molestias excepturi sint occaecati cupiditate non
+                provident,
+                <span class="green">similique sunt</span> in culpa qui officia deserunt
+                mollitia animi, id est laborum et dolorum fuga.
+              </div>
+            </div>
+            <div class="filterDivServices joy services__content">
+              <h4 class="services__content-title">Game developing</h4>
+              <div class="services__content-text">
+                At vero eos et accusamus et
+                <span class="green">iusto</span> odio dignissimos
+                <span class="black">ducimus</span> qui blanditiis praesentium voluptatum
+                deleniti
+                <br />
+                <br />
+                quos dolores et quas molestias excepturi sint occaecati cupiditate non
+                provident,
+                <span class="green">similique sunt</span> in culpa qui officia deserunt
+                mollitia animi, id est laborum et dolorum fuga.
+              </div>
+            </div>
+            <div class="filterDivServices plug services__content">
+              <h4 class="services__content-title">Plug and play</h4>
+              <div class="services__content-text">
+                At vero eos et accusamus et
+                <span class="green">iusto</span> odio dignissimos
+                <span class="black">ducimus</span> qui blanditiis praesentium voluptatum
+                deleniti
+                <br />
+                <br />
+                quos dolores et quas molestias excepturi sint occaecati cupiditate non
+                provident,
+                <span class="green">similique sunt</span> in culpa qui officia deserunt
+                mollitia animi, id est laborum et dolorum fuga.
+              </div>
+            </div>
+            <div class="services__skills">
+              <div class="services__skills-item skill-1">
+                <div class="services__skills-width">
+                  80 <span class="persent">%</span>
+                </div>
+                <div class="services__skills-name">Branding</div>
+              </div>
+              <div class="services__skills-item skill-2">
+                <div class="services__skills-width">
+                  75 <span class="persent">%</span>
+                </div>
+                <div class="services__skills-name">Web design</div>
+              </div>
+              <div class="services__skills-item skill-3">
+                <div class="services__skills-width">
+                  60 <span class="persent">%</span>
+                </div>
+                <div class="services__skills-name">UI/UX</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mac impressed -->
+      <section class="section mac">
+        <div class="mac__bg"></div>
+        <div class="container">
+          <div class="section__header">
+            <h2 class="title">Impressed?</h2>
+            <div class="mac__citation">
+              <cite class="subtitle">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                molestias
+              </cite>
+              <div class="mac__citation-name">- Abdullah Noman</div>
+              <div class="mac__citation-position">
+                Creatice director, <span class="green">code cafe</span>
+              </div>
+            </div>
+          </div>
+          <div class="mac__img-wrapper">
+            <img src="./img/mac/mac.jpg" alt="Mac" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio" class="section portfolio">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="title">The portfolio</h2>
+            <h3 class="subtitle">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+              praesentium
+            </h3>
+          </div>
+          <div id="servicesPortfolio" class="filter-row">
+            <button
+              class="btn-portfolio filter-row__item active-portfolio"
+              onclick="filterSelectionPortfolio('allworks')"
+            >
+              All works
+            </button>
+            <button
+              class="btn-portfolio filter-row__item"
+              onclick="filterSelectionPortfolio('print')"
+            >
+              Print
+            </button>
+            <button
+              class="btn-portfolio filter-row__item"
+              onclick="filterSelectionPortfolio('identity')"
+            >
+              Identity
+            </button>
+            <button
+              class="btn-portfolio filter-row__item"
+              onclick="filterSelectionPortfolio('branding')"
+            >
+              Branding
+            </button>
+            <button
+              class="btn-portfolio filter-row__item"
+              onclick="filterSelectionPortfolio('web')"
+            >
+              Web
+            </button>
+            <button
+              class="btn-portfolio filter-row__item"
+              onclick="filterSelectionPortfolio('html')"
+            >
+              HTML
+            </button>
+            <button
+              class="btn-portfolio filter-row__item"
+              onclick="filterSelectionPortfolio('wordpress')"
+            >
+              Wordpress
+            </button>
+          </div>
+        </div>
+        <div class="portfolio__inner">
+          <div class="container">
+            <div class="gallery">
+              <div class="gallery__column gallery__column-1">
+                <div class="filterDivPortfolio allworks print gallery__column-item">
+                  <img class="img" src="./img/portfolio/1.jpg" alt="1" />
+                  <div class="content">
+                    <div class="content__title">Title here</div>
+                    <div class="content__text">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                      blanditiis praesentium
+                    </div>
+                    <div class="content__icons">
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/link.svg" alt="Icon" />
+                      </div>
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/like.svg" alt="Icon" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="filterDivPortfolio allworks print gallery__column-item">
+                  <img class="img" src="./img/portfolio/2.jpg" alt="2" />
+                  <div class="content">
+                    <div class="content__title">Title here</div>
+                    <div class="content__text">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                      blanditiis praesentium
+                    </div>
+                    <div class="content__icons">
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/link.svg" alt="Icon" />
+                      </div>
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/like.svg" alt="Icon" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="filterDivPortfolio allworks identity gallery__column-item">
+                  <img class="img" src="./img/portfolio/3.jpg" alt="3" />
+                  <div class="content">
+                    <div class="content__title">Title here</div>
+                    <div class="content__text">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                      blanditiis praesentium
+                    </div>
+                    <div class="content__icons">
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/link.svg" alt="Icon" />
+                      </div>
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/like.svg" alt="Icon" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery__column gallery__column-2">
+                <div class="filterDivPortfolio allworks html gallery__column-item">
+                  <img class="img" src="./img/portfolio/4.jpg" alt="4" />
+                  <div class="content">
+                    <div class="content__title">Title here</div>
+                    <div class="content__text">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                      blanditiis praesentium
+                    </div>
+                    <div class="content__icons">
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/link.svg" alt="Icon" />
+                      </div>
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/like.svg" alt="Icon" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="filterDivPortfolio allworks branding gallery__column-item">
+                  <img class="img" src="./img/portfolio/5.jpg" alt="5" />
+                  <div class="content">
+                    <div class="content__title">Title here</div>
+                    <div class="content__text">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                      blanditiis praesentium
+                    </div>
+                    <div class="content__icons">
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/link.svg" alt="Icon" />
+                      </div>
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/like.svg" alt="Icon" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="filterDivPortfolio allworks web gallery__column-item">
+                  <img class="img" src="./img/portfolio/6.jpg" alt="6" />
+                  <div class="content">
+                    <div class="content__title">Title here</div>
+                    <div class="content__text">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                      blanditiis praesentium
+                    </div>
+                    <div class="content__icons">
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/link.svg" alt="Icon" />
+                      </div>
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/like.svg" alt="Icon" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery__column gallery__column-3">
+                <div class="filterDivPortfolio allworks identity gallery__column-item">
+                  <img class="img" src="./img/portfolio/7.jpg" alt="7" />
+                  <div class="content">
+                    <div class="content__title">Title here</div>
+                    <div class="content__text">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                      blanditiis praesentium
+                    </div>
+                    <div class="content__icons">
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/link.svg" alt="Icon" />
+                      </div>
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/like.svg" alt="Icon" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="filterDivPortfolio allworks wordpress gallery__column-item">
+                  <img class="img" src="./img/portfolio/8.jpg" alt="8" />
+                  <div class="content">
+                    <div class="content__title">Title here</div>
+                    <div class="content__text">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                      blanditiis praesentium
+                    </div>
+                    <div class="content__icons">
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/link.svg" alt="Icon" />
+                      </div>
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/like.svg" alt="Icon" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="filterDivPortfolio allworks html gallery__column-item">
+                  <img class="img" src="./img/portfolio/9.jpg" alt="9" />
+                  <div class="content">
+                    <div class="content__title">Title here</div>
+                    <div class="content__text">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                      blanditiis praesentium
+                    </div>
+                    <div class="content__icons">
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/link.svg" alt="Icon" />
+                      </div>
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/like.svg" alt="Icon" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery__column gallery__column-4">
+                <div class="filterDivPortfolio allworks web gallery__column-item">
+                  <img class="img" src="./img/portfolio/10.jpg" alt="10" />
+                  <div class="content">
+                    <div class="content__title">Title here</div>
+                    <div class="content__text">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                      blanditiis praesentium
+                    </div>
+                    <div class="content__icons">
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/link.svg" alt="Icon" />
+                      </div>
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/like.svg" alt="Icon" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="filterDivPortfolio allworks branding gallery__column-item">
+                  <img class="img" src="./img/portfolio/11.jpg" alt="11" />
+                  <div class="content">
+                    <div class="content__title">Title here</div>
+                    <div class="content__text">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                      blanditiis praesentium
+                    </div>
+                    <div class="content__icons">
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/link.svg" alt="Icon" />
+                      </div>
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/like.svg" alt="Icon" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="filterDivPortfolio allworks wordpress gallery__column-item">
+                  <img class="img" src="./img/portfolio/12.jpg" alt="12" />
+                  <div class="content">
+                    <div class="content__title">Title here</div>
+                    <div class="content__text">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                      blanditiis praesentium
+                    </div>
+                    <div class="content__icons">
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/link.svg" alt="Icon" />
+                      </div>
+                      <div class="content__icons-item">
+                        <img src="./img/portfolio/like.svg" alt="Icon" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="portfolio__submit flex">
+              <div class="container flex">
+                <div class="submit-text">
+                  At vero eos et <span class="white">accusamus</span> et iusto odio
+                  dignissimos ducimus qui blanditiis
+                </div>
+                <button class="submit-btn">Start Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team -->
+      <section id="team" class="section team">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="title">The team</h2>
+            <h3 class="subtitle">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+              praesentium
+            </h3>
+          </div>
+          <div class="slideshow-container carousel">
+            <div class="person mySlides fade">
+              <div class="person__avatar">
+                <img src="./img/team/1.jpg" alt="Avatar" />
+              </div>
+              <div class="person__description">
+                <div class="person__description-name">Abdullah Noman</div>
+                <div class="person__description-position">
+                  Creative director, code cafe
+                </div>
+                <div class="person__description-text">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium
+                </div>
+                <div class="person__description-skills skills">
+                  <div class="skills__item">
+                    <div class="skills__item-name">Branding</div>
+                    <div class="skills__item-persent">80 %</div>
+                    <div class="progress-bar">
+                      <div class="progress-bar--green">
+                        <div class="progress-bar">
+                          <div class="progress-bar__inner" style="width: 80%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skills__item">
+                    <div class="skills__item-name">Web design</div>
+                    <div class="skills__item-persent">65 %</div>
+                    <div class="progress-bar">
+                      <div class="progress-bar--green">
+                        <div class="progress-bar">
+                          <div class="progress-bar__inner" style="width: 65%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skills__item">
+                    <div class="skills__item-name">User interface</div>
+                    <div class="skills__item-persent">75 %</div>
+                    <div class="progress-bar">
+                      <div class="progress-bar--green">
+                        <div class="progress-bar">
+                          <div class="progress-bar__inner" style="width: 75%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mySlides fade person">
+              <div class="person__avatar">
+                <img src="./img/team/2.jpg" alt="Avatar" />
+              </div>
+              <div class="person__description">
+                <div class="person__description-name">Jhon Jhonson</div>
+                <div class="person__description-position">
+                  Senior developer, code cafe
+                </div>
+                <div class="person__description-text">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium
+                </div>
+                <div class="person__description-skills skills">
+                  <div class="skills__item">
+                    <div class="skills__item-name">Type Script</div>
+                    <div class="skills__item-persent">70 %</div>
+                    <div class="progress-bar">
+                      <div class="progress-bar--green">
+                        <div class="progress-bar">
+                          <div class="progress-bar__inner" style="width: 70%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skills__item">
+                    <div class="skills__item-name">React</div>
+                    <div class="skills__item-persent">95 %</div>
+                    <div class="progress-bar">
+                      <div class="progress-bar--green">
+                        <div class="progress-bar">
+                          <div class="progress-bar__inner" style="width: 95%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skills__item">
+                    <div class="skills__item-name">Angular</div>
+                    <div class="skills__item-persent">95 %</div>
+                    <div class="progress-bar">
+                      <div class="progress-bar--green">
+                        <div class="progress-bar">
+                          <div class="progress-bar__inner" style="width: 95%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mySlides fade person">
+              <div class="person__avatar">
+                <img src="./img/team/3.jpg" alt="Avatar" />
+              </div>
+              <div class="person__description">
+                <div class="person__description-name">Akash Mahavir</div>
+                <div class="person__description-position">
+                  Middle developer, code cafe
+                </div>
+                <div class="person__description-text">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium
+                </div>
+                <div class="person__description-skills skills">
+                  <div class="skills__item">
+                    <div class="skills__item-name">Java Script</div>
+                    <div class="skills__item-persent">95 %</div>
+                    <div class="progress-bar">
+                      <div class="progress-bar--green">
+                        <div class="progress-bar">
+                          <div class="progress-bar__inner" style="width: 95%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skills__item">
+                    <div class="skills__item-name">React</div>
+                    <div class="skills__item-persent">45 %</div>
+                    <div class="progress-bar">
+                      <div class="progress-bar--green">
+                        <div class="progress-bar">
+                          <div class="progress-bar__inner" style="width: 45%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skills__item">
+                    <div class="skills__item-name">Angular</div>
+                    <div class="skills__item-persent">25 %</div>
+                    <div class="progress-bar">
+                      <div class="progress-bar--green">
+                        <div class="progress-bar">
+                          <div class="progress-bar__inner" style="width: 25%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="control">
+              <div class="dot control__item active" onclick="currentSlide(1)"></div>
+              <div class="dot control__item" onclick="currentSlide(2)"></div>
+              <div class="dot control__item" onclick="currentSlide(3)"></div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block__title">Already Loved Us? Let's talk!</div>
+          <div class="contact-block__btn-wrap">
+            <a href="#contact" class="contact-block__btn">Contact Us</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section testimonials">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="title">Testimonials</h2>
+            <h3 class="subtitle">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+              praesentium
+            </h3>
+          </div>
+        </div>
+        <div class="carousel">
+          <div class="container">
+            <div class="mySlidesTestimonials carousel__item--testimonials fade">
+              <div class="avatar">
+                <img src="./img/testimonials/1.jpg" alt="Avatar" />
+              </div>
+              <div class="description">
+                <div class="description__text">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+                  et quas molestias excepturi sint occaecati cupiditate non provident,
+                  similique sunt in culpa qui officia deserunt mollitia.
+                </div>
+                <div class="description__owner">Partho</div>
+                <div class="description__position">Founder, artways bd</div>
+              </div>
+            </div>
+            <div class="mySlidesTestimonials carousel__item--testimonials fade">
+              <div class="avatar">
+                <img src="./img/testimonials/2.png" alt="Avatar" />
+              </div>
+              <div class="description">
+                <div class="description__text">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+                  et quas molestias excepturi sint occaecati cupiditate non provident,
+                  similique sunt in culpa qui officia deserunt mollitia.
+                </div>
+                <div class="description__owner">Nikita</div>
+                <div class="description__position">Developer, artways bd</div>
+              </div>
+            </div>
+            <div class="mySlidesTestimonials carousel__item--testimonials fade">
+              <div class="avatar">
+                <img src="./img/testimonials/3.png" alt="Avatar" />
+              </div>
+              <div class="description">
+                <div class="description__text">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+                  et quas molestias excepturi sint occaecati cupiditate non provident,
+                  similique sunt in culpa qui officia deserunt mollitia.
+                </div>
+                <div class="description__owner">Mika</div>
+                <div class="description__position">Designer, artways bd</div>
+              </div>
+            </div>
+            <div class="control">
+              <div
+                class="dot-testimonials control__item active"
+                onclick="currentSlideTestimonials(1)"
+              ></div>
+              <div
+                class="dot-testimonials control__item"
+                onclick="currentSlideTestimonials(2)"
+              ></div>
+              <div
+                class="dot-testimonials control__item"
+                onclick="currentSlideTestimonials(3)"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Latest news -->
+      <section id="blog" class="section news">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="title">Latest news</h2>
+            <h3 class="subtitle">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+              praesentium
+            </h3>
+          </div>
+          <div class="container">
+            <div class="news__inner">
+              <div class="carousel">
+                <div class="mySlidesNews carousel__item fade">
+                  <div class="carousel__item-title">The trending Landing Pages</div>
+                  <div class="carousel__item-author">
+                    by <span class="green">Kabir Uddin</span>
+                  </div>
+                  <div class="info">
+                    <div class="info__likes info__item">6950 Likes</div>
+                    <div class="info__comments info__item">243 Commens</div>
+                    <div class="info__shares">703 Shares</div>
+                  </div>
+                  <div class="carousel__item-text">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                    blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+                    et quas molestias excepturi sint occaecati cupiditate non provident,
+                    similique sunt in culpa qui officia deserunt mollitia animi, id est
+                    laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
+                    distinctio...
+                  </div>
+                  <div class="carousel__item-more more">
+                    <button class="more__btn">Read more</button>
+                    <p class="more__content">
+                      At vero eos et accusamus et iusto odio dignissimos. Et harum quidem
+                      rerum facilis est et expedita distinctio.
+                    </p>
+                  </div>
+                </div>
+                <div class="mySlidesNews carousel__item fade">
+                  <div class="carousel__item-title">The book about me</div>
+                  <div class="carousel__item-author">
+                    by <span class="green">Nikita Mumber</span>
+                  </div>
+                  <div class="info">
+                    <div class="info__likes info__item">2250 Likes</div>
+                    <div class="info__comments info__item">643 Commens</div>
+                    <div class="info__shares">1703 Shares</div>
+                  </div>
+                  <div class="carousel__item-text">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                    blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+                    et quas molestias excepturi sint occaecati cupiditate non provident,
+                    similique sunt in culpa qui officia deserunt mollitia animi, id est
+                    laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
+                    distinctio...
+                  </div>
+                  <div class="carousel__item-more more">
+                    <button class="more__btn">Read more</button>
+                    <p class="more__content">
+                      At vero eos et accusamus et iusto odio dignissimos. Et harum quidem
+                      rerum facilis est et expedita distinctio.
+                    </p>
+                  </div>
+                </div>
+                <div class="mySlidesNews carousel__item fade">
+                  <div class="carousel__item-title">The villiage</div>
+                  <div class="carousel__item-author">
+                    by <span class="green">Akbar Hasanov</span>
+                  </div>
+                  <div class="info">
+                    <div class="info__likes info__item">450 Likes</div>
+                    <div class="info__comments info__item">1243 Commens</div>
+                    <div class="info__shares">103 Shares</div>
+                  </div>
+                  <div class="carousel__item-text">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                    blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+                    et quas molestias excepturi sint occaecati cupiditate non provident,
+                    similique sunt in culpa qui officia deserunt mollitia animi, id est
+                    laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
+                    distinctio...
+                  </div>
+                  <div class="carousel__item-more more">
+                    <button class="more__btn">Read more</button>
+                    <p class="more__content">
+                      At vero eos et accusamus et iusto odio dignissimos. Et harum quidem
+                      rerum facilis est et expedita distinctio.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="control">
+                <div
+                  class="dot-news control__item active"
+                  onclick="currentSlideNews(1)"
+                ></div>
+                <div class="dot-news control__item" onclick="currentSlideNews(2)"></div>
+                <div class="dot-news control__item" onclick="currentSlideNews(3)"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Price -->
+      <section class="section price">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="title">Our price</h2>
+            <h3 class="subtitle">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+              praesentium
+            </h3>
+          </div>
+          <div class="price__content">
+            <div class="price__content-item item">
+              <div class="item__title">Premium</div>
+              <div class="item__body">
+                <div class="item__body-price">$ 60</div>
+                <div class="item__body-period">Per Month</div>
+              </div>
+
+              <div class="active">
+                <div class="active__body">
+                  <div class="active__body-text">Full Branding</div>
+                  <div class="active__body-text">Project Management</div>
+                  <div class="active__body-text">Unlimited Revisions</div>
+                  <div class="active__body-text">24/7 h Service</div>
+                  <div class="active__body-text">Free Domain</div>
+                  <div class="active__body-text">Free Hosting</div>
+                </div>
+                <div class="active__title">
+                  Let's Start
+                  <img src="./img/price/angle-right.svg" alt="Angle-right" />
+                </div>
+              </div>
+            </div>
+
+            <div class="price__content-item item">
+              <div class="item__title">Full</div>
+              <div class="item__body">
+                <div class="item__body-price">$ 70</div>
+                <div class="item__body-period">Per Month</div>
+              </div>
+
+              <div class="active">
+                <div class="active__body">
+                  <div class="active__body-text">Full Branding</div>
+                  <div class="active__body-text">Project Management</div>
+                  <div class="active__body-text">Unlimited Revisions</div>
+                  <div class="active__body-text">24/7 h Service</div>
+                  <div class="active__body-text">Free Domain</div>
+                  <div class="active__body-text">Free Hosting</div>
+                </div>
+                <div class="active__title">
+                  Let's Start
+                  <img src="./img/price/angle-right.svg" alt="Angle-right" />
+                </div>
+              </div>
+            </div>
+
+            <div class="price__content-item item">
+              <div class="item__title">Exclusive</div>
+              <div class="item__body">
+                <div class="item__body-price">$ 80</div>
+                <div class="item__body-period">Per Month</div>
+              </div>
+
+              <div class="active">
+                <div class="active__body">
+                  <div class="active__body-text">Full Branding</div>
+                  <div class="active__body-text">Project Management</div>
+                  <div class="active__body-text">Unlimited Revisions</div>
+                  <div class="active__body-text">24/7 h Service</div>
+                  <div class="active__body-text">Free Domain</div>
+                  <div class="active__body-text">Free Hosting</div>
+                </div>
+                <div class="active__title">
+                  Let's Start
+                  <img src="./img/price/angle-right.svg" alt="Angle-right" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Subscribe -->
+      <section class="section subscribe">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="title">Subscribe us</h2>
+            <h3 class="subtitle">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+              praesentium
+            </h3>
+          </div>
+          <div class="subscribe__form">
+            <input
+              class="subscribe__form-input"
+              type="email"
+              name="email"
+              placeholder="Email Address"
+            />
+            <button class="subscribe__form-btn">Submit</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="title">Contact us</h2>
+            <h3 class="subtitle">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+              praesentium
+            </h3>
+          </div>
+          <div class="contact__content">
+            <div class="contact__content-item item">
+              <div class="item__img-wrap">
+                <img class="item__img" src="./img/contact/1.jpg" alt="Image" />
+                <i class="pe-7s-mail"></i>
+              </div>
+              <p class="item__title">Email</p>
+              <p class="item__text">hello@codecafe.com</p>
+              <p class="item__text">Personal@codecafe.com</p>
+            </div>
+            <div class="contact__content-item item">
+              <div class="item__img-wrap">
+                <img class="item__img" src="./img/contact/2.jpg" alt="Image" />
+                <i class="pe-7s-map-marker"></i>
+              </div>
+              <p class="item__title">Our office</p>
+              <p class="item__text">240 Bhatikhana, 8200 Barisal</p>
+              <p class="item__text">Bangladesh</p>
+            </div>
+            <div class="contact__content-item item">
+              <div class="item__img-wrap">
+                <img class="item__img" src="./img/contact/3.jpg" alt="Image" />
+                <i class="pe-7s-call"></i>
+              </div>
+              <p class="item__title">Phone</p>
+              <p class="item__text">+00 11 66 99 66 44</p>
+              <p class="item__text">11 99 66 44 065</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact__form">
+          <div class="container">
+            <input type="text" placeholder="Your name" />
+            <input type="email" placeholder="Email address" />
+            <input type="text" placeholder="Subject" />
+            <textarea></textarea>
+            <button class="contact__form-btn">Submit now</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Footer -->
+      <footer class="section footer">
+        <div class="footer__map">
+          <iframe
+            class="footer__map-iframe"
+            width="520"
+            height="400"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20glockenhof+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe>
+          <div class="footer__inner">
+            <p class="footer__inner-text">Find us on the map</p>
+            <div class="arrow__btn-wrapper">
+              <a class="arrow__btn">
+                <i class="pe-7s-angle-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h2 class="footer__content-title">Bouncy</h2>
+          <p class="footer__content-rights">Copyright 2015. All rights Reserved</p>
+          <div class="footer__content-social social">
+            <a href="#" class="social__link" target="_blank" rel="nofollow noopener"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social__link" target="_blank" rel="nofollow noopener">
+              <i class="fab fa-twitter"> </i>
+            </a>
+            <a href="#" class="social__link" target="_blank" rel="nofollow noopener"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="social__link" target="_blank" rel="nofollow noopener">
+              <i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="social__link" target="_blank" rel="nofollow noopener">
+              <i class="fab fa-telegram-plane"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Icons -->
+    <script
+      crossorigin="anonymous"
+      src="https://kit.fontawesome.com/d3b9a0e4ec.js"
+    ></script>
+
+    <!-- Local -->
+    <script src="./js/header.js"></script>
+    <script src="./js/arrowDown.js"></script>
+    <script src="./js/filterAbout.js"></script>
+    <script src="./js/test.js"></script>
+    <script src="./js/filterServices.js"></script>
+    <script src="./js/carouselTeam.js"></script>
+    <script src="./js/carouselTestimonials.js"></script>
+    <script src="./js/latestNews.js"></script>
+    <script src="./js/portfolio.js"></script>
+  </body>
 </html>
